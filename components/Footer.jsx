@@ -31,7 +31,8 @@ const importantLinks = [
     { title: "RTI", href: "/rti" },
     {
         title: "IQAC",
-        href: "/iqacpdf/ReformationofIQAC.pdf",
+        // href: "/iqacpdf/ReformationofIQAC.pdf",
+        href:"https://static.shubhampf.cloud/ReformationofIQAC.pdf",
         target: true
     },
     { title: "NAAC", href: "http://naac.gov.in/index.php/en/", target: true },
