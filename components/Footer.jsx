@@ -31,7 +31,6 @@ const importantLinks = [
     { title: "RTI", href: "/rti" },
     {
         title: "IQAC",
-        // href: "/iqacpdf/ReformationofIQAC.pdf",
         href:"https://static.shubhampf.cloud/ReformationofIQAC.pdf",
         target: true
     },
@@ -44,6 +43,7 @@ const importantLinks = [
     { title: "NAD", href: "https://nad.gov.in/", target: true },
     { title: "AISHE", href: "https://aishe.gov.in/", target: true },
     { title: "ABC", href: "https://www.abc.gov.in/about.php", target: true },
+    { title: "Mandatory Disclosure", href: "https://static.shubhampf.cloud/MandatoryDisclosure-SVIET.pdf", target: true },
 ];
 
 const statutoryCells = [

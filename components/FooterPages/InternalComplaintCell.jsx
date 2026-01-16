@@ -4,9 +4,9 @@ export const internationalComplaintData = [
     {
         srNo: 1,
         position: "Presiding Officer",
-        name: "Dr. Vandana",
-        Designation: "Associate Professor & Hod (CA)",
-        contact: "9877797457"
+        name: "Dr. Khushboo Bansal",
+        Designation: "Professor (AI)",
+        contact: "7837556661"
     },
     {
         srNo: 2,
@@ -14,7 +14,7 @@ export const internationalComplaintData = [
         name:
             "Er. Jarnail Singh\n\nEr. Shivani Guleria",
         contact: "8437391235\n\n6239138362",
-        Designation: "Assistant Professor & Hod (CSE)\n\nAssistant Professor & Hod (CE)"
+        Designation: "Associate Professor (CSE)\n\nAssociate Professor (CE)"
     },
     {
         srNo: 3,
@@ -37,7 +37,7 @@ export const internationalComplaintData = [
         name:
             "Ms. Swikrty Biswas\n\nMr. Gaurav",
         contact: "9836214958\n\n7876680378",
-        Designation: "Student (B.TECH-CSD,4th Semester)\n\nStudent (B.TECH-ECE,4th Semester)"
+        Designation: "Student (B.TECH-CSD)\n\nStudent (B.TECH-ECE)"
     }
 ]
 
@@ -51,7 +51,7 @@ const InternalComplaintCell = () => {
                 <div className="container mx-auto px-4">
                     <div className="max-w-6xl mx-auto">
                         <h2 className="text-3xl font-bold text-gray-900 mb-8">
-                            Members of  Committee                        </h2>
+                            Members of Committee                        </h2>
 
 
                         <div className="overflow-x-auto">

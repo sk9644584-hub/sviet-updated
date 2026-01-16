@@ -1,12 +1,12 @@
 export const scstdata = [
     {
-        srNo: 1, name: "Dr.Pertik Garg", Designation: "Chairperson", Emails: "principal@sviet.ac.in"
+        srNo: 1, name: "Dr. Pertik Garg", Designation: "Chairperson", Emails: "principal@sviet.ac.in"
     },
     {
         srNo: 2, name: "Mr. Himanshu Rao", Designation: "Co-Ordinator", Emails: "registrar@sviet.org.in"
     },
     {
-        srNo: 3, name: "Er. Ankur Gill", Designation: "Member", Emails: "registrar@sviet.org.in"
+        srNo: 3, name: "Dr. Ankur Gill", Designation: "Member", Emails: "registrar@sviet.org.in"
     },
     {
         srNo: 4, name: "Mr. Talwinder Singh", Designation: "Member", Emails: "registrar@sviet.org.in"
@@ -21,8 +21,8 @@ export const sgrcData = [
     {
         srNo: 1,
         composition: "Chairperson",
-        members: ["Mr. Sarabjeet Singh"],
-        designation: ["Dean (Student Welfare)"]
+        members: ["Er. Tarandeep Singh"],
+        designation: ["Coordinator (Student Welfare)"]
     },
     {
         srNo: 2,
@@ -34,9 +34,9 @@ export const sgrcData = [
         ],
         designation: [
 
-            "Associate Professor & Hod (MBA)",
-            "Associate Professor (Applied Sciences)"
-            , "Assistant Professor & Hod (Applied Sciences)"
+            "Professor (MBA)",
+            "Professor (ECE)"
+            , "Associate Professor (CE)"
         ]
     },
     {
@@ -47,8 +47,8 @@ export const sgrcData = [
             "Mr. Bibek Kumar Yadav"
         ],
         designation: [
-            "Student (B.TECH-CSE,6th Semester)",
-            "Student (B.TECH-CE,6th Semester)"
+            "Student (B.TECH-CSE)",
+            "Student (B.TECH-CE)"
         ]
     }
 ]
@@ -56,15 +56,15 @@ export const sgrcData = [
 export const womenData = [
     {
         srNo: 1, name: "Dr. Meena Thakur", Position: "Convener",
-        Desigination: "Associate Professor, CSE"
+        Desigination: "Professor, CSE"
     },
     {
-        srNo: 2, name: "Ms. Roop Shikha", Position: "Coordinator",
+        srNo: 2, name: "Dr. Roop Shikha", Position: "Coordinator",
         Desigination: "Assistant Professor, ECE"
     },
     {
         srNo: 4, name: "Dr. Indu Batra", Position: "Member",
-        Desigination: "Associate Professor, EE"
+        Desigination: "Professor, ECE"
     },
 
     {
@@ -101,17 +101,17 @@ export const antiraggingdata = [
     },
     {
         srNo: 2,
-        name: "Er. Manik Dhiman",
+        name: "Dr. Ankur Gill",
         designation: "Committee Coordinator"
     },
     {
         srNo: 3,
-        name: "Dr. Vandana",
+        name: "Er. Jarnail Singh",
         designation: "Member"
     },
     {
         srNo: 4,
-        name: "Er. Ankur Gill",
+        name: "Dr. Hartripat Kaur",
         designation: "Member"
     },
     {
@@ -135,9 +135,9 @@ export const internationalComplaintData = [
     {
         srNo: 1,
         position: "Presiding Officer",
-        name: "Dr. Vandana",
-        Designation: "Associate Professor & Hod (CA)",
-        contact: "9877797457"
+        name: "Dr. Khushboo Bansal",
+        Designation: "Professor (AI)",
+        contact: "7837556661"
     },
     {
         srNo: 2,
@@ -145,7 +145,7 @@ export const internationalComplaintData = [
         name:
             "Er. Jarnail Singh\n\nEr. Shivani Guleria",
         contact: "8437391235\n\n6239138362",
-        Designation: "Assistant Professor & Hod (CSE)\n\nAssistant Professor & Hod (CE)"
+        Designation: "Associate Professor (CSE)\n\nAssociate Professor (CE)"
     },
     {
         srNo: 3,
@@ -168,18 +168,18 @@ export const internationalComplaintData = [
         name:
             "Ms. Swikrty Biswas\n\nMr. Gaurav",
         contact: "9836214958\n\n7876680378",
-        Designation: "Student (B.TECH-CSD,4th Semester)\n\nStudent (B.TECH-ECE,4th Semester)"
+        Designation: "Student (B.TECH-CSD)\n\nStudent (B.TECH-ECE)"
     }
 ]
 export const obcData = [
     {
-        srNo: 1, name: "Dr.Pertik Garg", Designation: "Chairperson", Emails: "principal@sviet.ac.in"
+        srNo: 1, name: "Dr. Pertik Garg", Designation: "Chairperson", Emails: "principal@sviet.ac.in"
     },
     {
         srNo: 2, name: "Mr. Himanshu Rao", Designation: "Co-Ordinator", Emails: "registrar@sviet.org.in"
     },
     {
-        srNo: 3, name: "Er. Ankur Gill", Designation: "Member", Emails: "registrar@sviet.org.in"
+        srNo: 3, name: "Dr. Ankur Gill", Designation: "Member", Emails: "registrar@sviet.org.in"
     },
     {
         srNo: 4, name: "Mr. Talwinder Singh", Designation: "Member", Emails: "registrar@sviet.org.in"

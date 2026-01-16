@@ -4,8 +4,8 @@ const data = [
     {
         srNo: 1,
         composition: "Chairperson",
-        members: ["Mr. Sarabjeet Singh"],
-        designation: ["Dean (Student Welfare)"]
+        members: ["Er. Tarandeep Singh"],
+        designation: ["Coordinator (Student Welfare)"]
     },
     {
         srNo: 2,
@@ -17,9 +17,9 @@ const data = [
         ],
         designation: [
 
-            "Associate Professor & Hod (MBA)",
-            "Associate Professor (Applied Sciences)"
-            , "Assistant Professor & Hod (Applied Sciences)"
+            "Professor (MBA)",
+            "Professor (ECE)"
+            , "Associate Professor (CE)"
         ]
     },
     {
@@ -30,8 +30,8 @@ const data = [
             "Mr. Bibek Kumar Yadav"
         ],
         designation: [
-            "Student (B.TECH-CSE,6th Semester)",
-            "Student (B.TECH-CE,6th Semester)"
+            "Student (B.TECH-CSE)",
+            "Student (B.TECH-CE)"
         ]
     }
 ]

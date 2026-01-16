@@ -40,15 +40,15 @@ const complaints = [{
 const data = [
     {
         srNo: 1, name: "Dr. Meena Thakur", Position: "Convener",
-        Desigination: "Associate Professor, CSE"
+        Desigination: "Professor, CSE"
     },
     {
-        srNo: 2, name: "Ms. Roop Shikha", Position: "Coordinator",
+        srNo: 2, name: "Dr. Roop Shikha", Position: "Coordinator",
         Desigination: "Assistant Professor, ECE"
     },
     {
         srNo: 4, name: "Dr. Indu Batra", Position: "Member",
-        Desigination: "Associate Professor, EE"
+        Desigination: "Professor, ECE"
     },
 
     {

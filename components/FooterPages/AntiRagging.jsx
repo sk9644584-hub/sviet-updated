@@ -34,43 +34,44 @@ const majors = [
 
 
 
-const data = [
-    {
-        srNo: 1,
-        name: "Dr. Pertik Garg",
-        designation: "Committee Convener"
-    },
-    {
-        srNo: 2,
-        name: "Er. Manik Dhiman",
-        designation: "Committee Coordinator"
-    },
-    {
-        srNo: 3,
-        name: "Dr. Vandana",
-        designation: "Member"
-    },
-    {
-        srNo: 4,
-        name: "Er. Ankur Gill",
-        designation: "Member"
-    },
-    {
-        srNo: 5,
-        name: "Ms. Gurwinder Kaur",
-        designation: "Member"
-    },
-    {
-        srNo: 6,
-        name: "Mr. Mani Ram",
-        designation: "Member"
-    },
-    {
-        srNo: 7,
-        name: "Ms. Pushpa Goyal",
-        designation: "Member"
-    }
-]
+const data =
+    [
+        {
+            srNo: 1,
+            name: "Dr. Pertik Garg",
+            designation: "Committee Convener"
+        },
+        {
+            srNo: 2,
+            name: "Dr. Ankur Gill",
+            designation: "Committee Coordinator"
+        },
+        {
+            srNo: 3,
+            name: "Er. Jarnail Singh",
+            designation: "Member"
+        },
+        {
+            srNo: 4,
+            name: "Dr. Hartripat Kaur",
+            designation: "Member"
+        },
+        {
+            srNo: 5,
+            name: "Ms. Gurwinder Kaur",
+            designation: "Member"
+        },
+        {
+            srNo: 6,
+            name: "Mr. Mani Ram",
+            designation: "Member"
+        },
+        {
+            srNo: 7,
+            name: "Ms. Pushpa Goyal",
+            designation: "Member"
+        }
+    ]
 const AntiRagging = () => {
     return (
         <>

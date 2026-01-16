@@ -17,13 +17,13 @@ const qualityAssuranceActivities
     ]
 const data = [
     {
-        srNo: 1, name: "Dr.Pertik Garg", Designation: "Chairperson", Emails: "principal@sviet.ac.in"
+        srNo: 1, name: "Dr. Pertik Garg", Designation: "Chairperson", Emails: "principal@sviet.ac.in"
     },
     {
         srNo: 2, name: "Mr. Himanshu Rao", Designation: "Co-Ordinator", Emails: "registrar@sviet.org.in"
     },
     {
-        srNo: 3, name: "Er. Ankur Gill", Designation: "Member", Emails: "registrar@sviet.org.in"
+        srNo: 3, name: "Dr. Ankur Gill", Designation: "Member", Emails: "registrar@sviet.org.in"
     },
     {
         srNo: 4, name: "Mr. Talwinder Singh", Designation: "Member", Emails: "registrar@sviet.org.in"
@@ -32,6 +32,7 @@ const data = [
         srNo: 5, name: "Mr. Jaspreet Singh", Designation: "Member", Emails: "registrar@sviet.org.in"
     },
 ]
+
 const ObcCell = () => {
     return (
         <>
