@@ -44,7 +44,7 @@ const data = [
     },
     {
         srNo: 2, name: "Dr. Roop Shikha", Position: "Coordinator",
-        Desigination: "Assistant Professor, ECE"
+        Desigination: "Associate Professor, ECE"
     },
     {
         srNo: 4, name: "Dr. Indu Batra", Position: "Member",

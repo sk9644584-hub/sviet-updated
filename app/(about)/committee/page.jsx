@@ -40,29 +40,35 @@ const Page = () => {
                                 <tbody>
                                     {sgrcData.map((item, index) => (
                                         <tr key={index}>
-                                            <td className="border border-gray-300 w-14 max-w-14 px-4 py-3 align-top">
+                                            <td className="border border-gray-300 w-14 px-4 py-3 align-top">
                                                 {item.srNo}
                                             </td>
-                                            <td className="border border-gray-300 w-80 max-w-80 px-4 py-3 align-top">
+
+                                            <td className="border border-gray-300 w-80 px-4 py-3 align-top">
                                                 {item.composition}
                                             </td>
-                                            <td className="border w-52 max-w-52 border-gray-300 px-4 py-3">
-                                                <ul className="">
-                                                    {item.members.map((member, idx) => (
-                                                        <li className='mb-7 md:mb-10.5' key={idx}>{member}</li>
-                                                    ))}
-                                                </ul>
+
+                                            {/* MEMBERS COLUMN */}
+                                            <td className="border border-gray-300 px-4 py-3 align-top">
+                                                {item.members.map((member, idx) => (
+                                                    <div key={idx} className=" py-2">
+                                                        {member}
+                                                    </div>
+                                                ))}
                                             </td>
-                                            <td className="border border-gray-300 px-4 py-3">
-                                                <ul className="">
-                                                    {item.designation.map((des, idx) => (
-                                                        <li className='mb-3 md:mb-8 sm:mb-6' key={idx}>{des}</li>
-                                                    ))}
-                                                </ul>
+
+                                            {/* DESIGNATION COLUMN */}
+                                            <td className="border border-gray-300 px-4 py-3 align-top">
+                                                {item.designation.map((des, idx) => (
+                                                    <div key={idx} className=" py-2">
+                                                        {des}
+                                                    </div>
+                                                ))}
                                             </td>
                                         </tr>
                                     ))}
                                 </tbody>
+
                             </table>
                         </div>
                     </div>
