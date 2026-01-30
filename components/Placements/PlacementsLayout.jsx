@@ -202,10 +202,11 @@ const PlacementsLayout = () => {
                                         Highlights of Our Placement Cell
                                     </h2>
                                     <div className="space-y-4  text-gray-700 text-sm leading-relaxed">
-                                        <div className='h-[500px] w-full'>
-                                            <img className='h-full w-full rounded-md'
+                                        <div className='h-[500px] w-full relative'>
+                                            <Image className='rounded-md object-cover'
                                                 src={"https://static.shubhampf.cloud/management/image.jpeg"}
-                                                loading="lazy"
+                                                alt="Placement Cell Highlights"
+                                                fill
                                             />
                                         </div>
 

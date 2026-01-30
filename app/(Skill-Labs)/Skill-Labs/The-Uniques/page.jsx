@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
+import Image from 'next/image';
 
 import { FileText, Code, MessagesSquare, CheckCircle2, Users, Briefcase, Handshake, Rocket, Award, Cpu, BadgeCheck, Lightbulb, Star, Globe, Sparkles } from 'lucide-react';
 
@@ -84,8 +85,14 @@ const SelectionSection = () => (
                 <p className=" text-justify text-lg">The Uniques is an exclusive talent development initiative at SVIET that identifies the most passionate learners and gives them the platform to excel. We are a community of achievers, mentored by industry leaders, working together to transform knowledge into real-world impact. Being  part  of  The  Uniques  is  not  just  about belonging   to   a   batch—it’s  about  joining  a  movement  of  innovation,  leadership,  and excellence.</p>
             </div>
             <div className="flex justify-center">
-                <img src="https://www.sviet.ac.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FuniWhite.9a4ad8dc.png&w=384&q=75" alt="The Uniques Logo" className="w-64" loading="lazy"
-                />
+                <div className="relative w-64 h-64">
+                    <Image
+                        src="https://www.sviet.ac.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FuniWhite.9a4ad8dc.png&w=384&q=75"
+                        alt="The Uniques Logo"
+                        fill
+                        className="object-contain"
+                    />
+                </div>
             </div>
         </div>
 
@@ -299,13 +306,14 @@ const BenefitsSection = () => (
 const EmpoweringEntrepreneursSection = () => (
     <section className="py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <img
-                loading="lazy"
-
-                src="https://www.sviet.ac.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FimageCover.51d6f474.jpeg&w=1920&q=75"
-                alt="Interaction at U-Zone"
-                className="rounded-lg shadow-lg w-full h-auto object-cover"
-            />
+            <div className="relative w-full h-96">
+                <Image
+                    src="https://www.sviet.ac.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FimageCover.51d6f474.jpeg&w=1920&q=75"
+                    alt="Interaction at U-Zone"
+                    fill
+                    className="rounded-lg shadow-lg object-cover"
+                />
+            </div>
             <div className="space-y-4">
                 <p className="text-sm font-semibold text-blue-600">ENTREPRENEURSHIP INSIGHTS</p>
                 <h2 className="text-4xl font-bold text-gray-900">Empowering Entrepreneurs to Succeed</h2>
@@ -321,9 +329,14 @@ const FeatureSection = ({ title, description, imageUrl, imagePosition }) => {
         <section className="py-16">
             <div className={`grid grid-cols-1 md:grid-cols-2 gap-12 items-center`}>
                 <div className={`order-2 ${isImageLeft ? 'md:order-1' : 'md:order-2'}`}>
-                    <img src={imageUrl} alt={title}
-                        loading="lazy"
-                        className="rounded-lg shadow-lg w-full h-auto object-cover" />
+                    <div className="relative w-full h-80">
+                        <Image
+                            src={imageUrl}
+                            alt={title}
+                            fill
+                            className="rounded-lg shadow-lg object-cover"
+                        />
+                    </div>
                 </div>
                 <div className={`order-1 ${isImageLeft ? 'md:order-2' : 'md:order-1'} space-y-3`}>
                     <h3 className="text-3xl font-bold text-gray-900">{title}</h3>
@@ -336,13 +349,14 @@ const FeatureSection = ({ title, description, imageUrl, imagePosition }) => {
 
 const GDSCSection = () => (
     <section className="text-center bg-gray-50 rounded-lg p-8 md:p-16 mt-16">
-        <img
-            loading="lazy"
-
-            src="https://res.cloudinary.com/startup-grind/image/fetch/c_scale,w_2560/c_crop,h_650,w_2560,y_0.0_mul_h_sub_0.0_mul_650/c_crop,h_650,w_2560/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/https://res.cloudinary.com/startup-grind/image/upload/c_fill%2Cdpr_2.0%2Cf_auto%2Cg_center%2Cq_auto:good/v1/gcs/platform-data-dsc/chapter_banners/gdsc%25201.0%2520copy.jpg"
-            alt="Google Developer Student Club Banner"
-            className="w-full max-w-4xl mx-auto rounded-lg shadow-md mb-8"
-        />
+        <div className="relative w-full h-64 md:h-96 mb-8">
+            <Image
+                src="https://res.cloudinary.com/startup-grind/image/fetch/c_scale,w_2560/c_crop,h_650,w_2560,y_0.0_mul_h_sub_0.0_mul_650/c_crop,h_650,w_2560/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/https://res.cloudinary.com/startup-grind/image/upload/c_fill%2Cdpr_2.0%2Cf_auto%2Cg_center%2Cq_auto:good/v1/gcs/platform-data-dsc/chapter_banners/gdsc%25201.0%2520copy.jpg"
+                alt="Google Developer Student Club Banner"
+                fill
+                className="rounded-lg shadow-md object-cover"
+            />
+        </div>
         <h2 className="text-4xl font-bold text-gray-900 mb-4">Google Developer's Student Club</h2>
         <p className="max-w-3xl text-justify mx-auto text-gray-600 mb-8">
             We at GDSC-SVIET are a passionate group of people who work towards bringing a change in the ecosystem of development around the campus. We want to create a healthy environment for the budding developers to exploring solutions to real life problems and promote the developer culture.

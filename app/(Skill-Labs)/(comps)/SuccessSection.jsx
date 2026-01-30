@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const SuccessSection = () => {
     return (
@@ -23,13 +24,12 @@ const SuccessSection = () => {
                     </div>
 
                     {/* Right Column: Image */}
-                    <div>
-                        <img
-                            loading="lazy"
-
+                    <div className="relative w-full h-80 md:h-96">
+                        <Image
                             src="https://www.sviet.ac.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FAch.a46d1a27.jpeg&w=3840&q=75"
                             alt="Students learning in a modern classroom"
-                            className="w-full h-auto rounded-lg shadow-xl object-cover"
+                            fill
+                            className="rounded-lg shadow-xl object-cover"
                         />
                     </div>
 

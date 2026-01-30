@@ -1,5 +1,6 @@
 import { Badge } from '@/components/ui/badge'
 import { Card, CardContent } from '@/components/ui/card'
+import Image from 'next/image'
 const latestPlacementDrive = [
    
     {
@@ -132,12 +133,14 @@ const GalleryItems = () => {
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {latestPlacementDrive.map((item) => (
                         <Card key={item.id} className="shadow-lg py-0 overflow-hidden hover:shadow-xl transition-all duration-300">
-                            <img
-                                loading="lazy"
-                                src={item.imgSrc || "/placeholder.svg"}
-                                alt="Placement Drive"
-                                className="w-full h-64 object-cover rounded-t-lg"
-                            />
+                            <div className="relative h-64 w-full">
+                                <Image
+                                    src={item.imgSrc || "/placeholder.svg"}
+                                    alt={item.title || "Placement Drive"}
+                                    fill
+                                    className="object-cover rounded-t-lg"
+                                />
+                            </div>
                             <CardContent className="p-6 pt-0">
                                 <h3 className="text-xl font-bold text-blue-900 mb-2">
                                     {item.title}

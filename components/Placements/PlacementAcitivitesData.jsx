@@ -1,5 +1,6 @@
 "use client"
 import React from "react"
+import Image from "next/image"
 
 const PlacementAcitivitesData = () => {
     const cardsData = [
@@ -77,12 +78,14 @@ const PlacementAcitivitesData = () => {
                         key={index}
                         className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
                     >
-                        <img
-                            loading="lazy"
-                            src={card.image}
-                            alt={card.title}
-                            className="w-full h-40 object-cover"
-                        />
+                        <div className="relative h-40 w-full">
+                            <Image
+                                src={card.image}
+                                alt={card.title}
+                                fill
+                                className="object-cover"
+                            />
+                        </div>
                         <div className="p-4">
                             <h3 className="text-lg font-semibold mb-2">{card.title}</h3>
                             <p className="text-gray-600 text-sm">{card.description}</p>

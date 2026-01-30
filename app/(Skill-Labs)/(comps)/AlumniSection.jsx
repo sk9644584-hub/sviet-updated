@@ -1,6 +1,7 @@
 "use client"
 
 import React from "react"
+import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import {
     Carousel,
@@ -84,12 +85,14 @@ export function AlumniSection() {
                             <CarouselItem key={index} className="pl-8 basis-full md:basis-1/2 lg:basis-1/3">
                                 <Card className="overflow-hidden rounded-lg p-0 shadow-lg">
                                     <CardContent className="p-0">
-                                        <img
-                                            loading="lazy"
-                                            src={imgSrc}
-                                            alt={`Alumni ${index + 1}`}
-                                            className="aspect-square h-full w-full object-cover"
-                                        />
+                                        <div className="relative aspect-square w-full">
+                                            <Image
+                                                src={imgSrc}
+                                                alt={`Alumni ${index + 1}`}
+                                                fill
+                                                className="object-cover"
+                                            />
+                                        </div>
                                     </CardContent>
                                 </Card>
                             </CarouselItem>

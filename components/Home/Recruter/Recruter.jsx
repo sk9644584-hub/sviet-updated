@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 const leadingRecruiters = [
     {
         name: "Reliance Industrial",
@@ -62,13 +63,13 @@ const Recruter = () => {
                         {leadingRecruiters.map((recruiter, index) => (
                             <div
                                 key={index}
-                                className="bg-white border border-gray-200 rounded-lg p-2 shadow-md hover:shadow-lg transition-shadow duration-300 flex items-center justify-center min-w-[150px] h-24"
+                                className="bg-white border border-gray-200 rounded-lg p-2 shadow-md hover:shadow-lg transition-shadow duration-300 flex items-center justify-center min-w-[150px] h-24 relative"
                             >
-                                <img
-                                    loading="lazy"
+                                <Image
                                     src={recruiter.logo || "/placeholder.svg"}
                                     alt={recruiter.name}
-                                    className="max-w-full max-h-full object-contain hover:grayscale-0 transition-all duration-300"
+                                    fill
+                                    className="p-2 object-contain hover:grayscale-0 transition-all duration-300"
                                 />
                             </div>
                         ))}
