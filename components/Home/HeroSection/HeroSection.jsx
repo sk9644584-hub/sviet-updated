@@ -57,6 +57,7 @@ export function HeroSection({ images }) {
                                             loading="lazy"
                                             style={{ objectFit: 'cover' }}
                                             className="z-0"
+                                            priority={true}
                                         />
                                     </div>
                                 </div>

@@ -7,6 +7,7 @@ const ImageCard = ({ item }) => {
                 src={item.img}
                 alt={item.title}
                 loading="lazy"
+                decoding='async'
                 className="w-full h-72 object-cover transition-all duration-500 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
