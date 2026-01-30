@@ -82,13 +82,13 @@ export const navItems = [
                     { name: "Autonomous", href: "/" },
                     {
                         name: "Ph.D. Course Work Approval (IKGPTU)",
-                        href: "/events/2298-2303-Conduct-of-Course-work-of-IKGPTU-Ph.D-Students-in-NAAC-NBA-accredited-affiliated-colleges.pdf"
+                        href: "https://static.shubhampf.cloud/2298-2303-Conduct-of-Course-work-of-IKGPTU-Ph.D-Students-in-NAAC-NBA-accredited-affiliated-colleges.pdf"
                     },
                     { name: "NAAC Accreditation Certificate", href: "/NAAC" },
 
                     {
                         name: "UGC 2(f) Recognition Letter",
-                        href: "/events/2FRecognitionLetter591-2025.pdf"
+                        href: "https://static.shubhampf.cloud/2FRecognitionLetter591-2025.pdf"
                     },
 
 
@@ -96,7 +96,7 @@ export const navItems = [
             }
         ]
     },
-    { name: "HR MANUAL", href: "/HR-Manual.pdf", dropdown: [] },
+    { name: "HR MANUAL", href: "https://static.shubhampf.cloud/HR-Manual.pdf", dropdown: [] },
     { name: "CONTACT US", href: "/contact-us", dropdown: [] },
     { name: "Gallery", href: "/CollegeGallery", dropdown: [] },
 

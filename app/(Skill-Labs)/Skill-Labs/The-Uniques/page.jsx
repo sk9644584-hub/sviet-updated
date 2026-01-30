@@ -34,7 +34,7 @@ export default function TheUniquesPage() {
                 <FeatureSection
                     title="Unlocking Your Creative Potential"
                     description="Unleash your creativity with innovative ideas and inspirational techniques. Learn how to think outside the box, overcome creative blocks, and turn your imagination into reality."
-                    imageUrl="/Highlights/placement.webp"
+                    imageUrl="https://static.shubhampf.cloud/placement.webp"
                     imagePosition="left"
                 />
                 <GDSCSection />
@@ -139,7 +139,7 @@ const talentData = [
     {
         title: "Building a Successful Career Path",
         description: "Chart your course for a successful career by setting goals, honing your skills, and seizing opportunities for growth. With dedication and perseverance, you can turn your aspirations into achievements in the corporate world.",
-        bgImage: "url('/Highlights/placement.webp')"
+        bgImage: "url('https://static.shubhampf.cloud/placement.webp')"
     }
 ];
 

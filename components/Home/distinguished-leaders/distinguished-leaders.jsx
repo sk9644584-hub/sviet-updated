@@ -17,7 +17,7 @@ export function DistinguishedLeaders() {
                     <div className="w-full max-w-6xl mx-auto">
                         <Image
                             loading="lazy"
-                            src="/Home/distinguished-personalities.jpg"
+                            src="https://static.shubhampf.cloud/distinguished-personalities.jpg"
                             alt="Distinguished Leaders, Visionaries and Changemakers - A showcase of eminent personalities who have visited our institution including notable leaders, innovators, and changemakers who have inspired our students"
                             width={1200}
                             height={600}

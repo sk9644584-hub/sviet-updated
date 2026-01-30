@@ -11,28 +11,28 @@ export default function AdministrationPage() {
             designation: "Director Academics",
             email: "director_academics@sviet.ac.in",
             imageQuery: "man in suit with glasses",
-            imageUrl: "/Management/1.jpeg",
+            imageUrl: "https://static.shubhampf.cloud/management/1.jpeg",
         },
         {
             name: "(Prof.) Dr. Pertik Garg",
             designation: "Principal",
             email: "principal@sviet.ac.in",
             imageQuery: "man in checkered shirt with glasses",
-            imageUrl: "/Management/pertik.webp",
+            imageUrl: "https://static.shubhampf.cloud/management/pertik.webp",
         },
         {
             name: "Mr. Himanshu",
             designation: "Registrar",
             email: "registrar@sviet.ac.in",
             imageQuery: "man with beard and black suit",
-            imageUrl: "/Management/himanshu.jpeg",
+            imageUrl: "https://static.shubhampf.cloud/management/himanshu.jpeg",
         },
         {
             name: "Ms. Gurwinder Kaur",
             designation: "Controller of Examination",
             email: "coe@sviet.ac.in",
             imageQuery: "woman in blue and white traditional attire",
-            imageUrl: "/Management/GurwinderMam.jpg",
+            imageUrl: "https://static.shubhampf.cloud/management/GurwinderMam.jpg",
         },
     ]
 

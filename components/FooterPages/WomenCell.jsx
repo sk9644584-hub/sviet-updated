@@ -229,7 +229,7 @@ const WomenCell = () => {
                                     Click here
                                 </Button>
                             </Link>
-                            <Link className='cursor-pointer' href="/Women-Grievance-Form.pdf" target='_blank'>
+                            <Link className='cursor-pointer' href="https://static.shubhampf.cloud/Women-Grievance-Form.pdf" target='_blank'>
                                 <Button variant={"secondary"} className='cursor-pointer'>
                                     Download Complaint Form
                                 </Button>

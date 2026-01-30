@@ -4,7 +4,7 @@ const latestPlacementDrive = [
    
     {
         id: 2,
-        imgSrc: "/Recruiters/ocean.2fd7a9db.png",
+        imgSrc: "https://static.shubhampf.cloud/Recruiters/ocean.2fd7a9db.png",
         title: "Ocean Technologies Pvt. Ltd.",
         description: "Ocean Technologies Pvt. Ltd. makes waves at SVIET campus recruitment drive!Exciting opportunities unfolded for B.Tech and diploma students in EE, ME, CSE, ECE, Civil, and MBA (2024) batches. ",
         date: "01st December 2023"
@@ -12,7 +12,7 @@ const latestPlacementDrive = [
     },
     {
         id: 3,
-        imgSrc: "/Recruiters/Clicklabs.002df006.webp",
+        imgSrc: "https://static.shubhampf.cloud/Recruiters/Clicklabs.002df006.webp",
         title: "Click Labs",
         description: "SVIET organized a successful placement drive today for the students of MBA and B.Tech CSE | Batch 2025 passing out by reputed company Click Labs!",
         date: "22nd March 2024"
@@ -20,7 +20,7 @@ const latestPlacementDrive = [
     },
     {
         id: 4,
-        imgSrc: "/Recruiters/value.1541ddae.png",
+        imgSrc: "https://static.shubhampf.cloud/Recruiters/value.1541ddae.png",
         title: "Value Prospect Consulting",
         description: "Value Prospect Consulting’s Campus Drive at SVIET: 15 Students Land Dream Jobs! Mr. Pratik guides candidates through a rigorous 4-phase selection process. A big opportunity for the 2023, 2024, and 2025 batches.",
         date: "04th April 2024"
@@ -28,7 +28,7 @@ const latestPlacementDrive = [
     },
     {
         id: 5,
-        imgSrc: "/Recruiters/placementday.2b5fc03a.jpg",
+        imgSrc: "https://static.shubhampf.cloud/Recruiters/placementday.2b5fc03a.jpg",
         title: "Placement Day",
         description: "After an incredible Placement Day event at SVIET, we’re thrilled to have hosted over 200 students from various colleges and universities across different states, including Government polytechnic colleges in Khuni Majra, Meham.",
         date: "16th May 2024"
@@ -37,26 +37,26 @@ const latestPlacementDrive = [
         "title": "Global Futures Summit 2024",
         "description": "Dive into our industry panel session covering market trends and cutting-edge technology! These snapshots capture the dynamic exchange between industry and academia, shaping tomorrow’s tech leaders. Join the fusion.",
         "date": "23rd March 2024",
-        imgSrc: "/Recruiters/summit.a2de6a4f.webp"
+        imgSrc: "https://static.shubhampf.cloud/Recruiters/summit.a2de6a4f.webp"
     },
 
     {
         id: 8,
-        imgSrc: "/Recruiters/asdf.jpeg",
+        imgSrc: "https://static.shubhampf.cloud/Recruiters/asdf.jpeg",
         "title": "24x7 Software, Pune - On-Campus Placement Drive",
         "description": "Training & Placement Cells, SVIET successfully organized an on-campus placement drive for B.Tech CSE Batch 2025, in collaboration with 24x7 Software, Pune. With over 70 student... participating.",
         "date": "24th September 2024"
     },
     {
         id: 9,
-        imgSrc: "/Recruiters/asdfasd.jpeg",
+        imgSrc: "https://static.shubhampf.cloud/Recruiters/asdfasd.jpeg",
         "title": "Skillkart Placement Drive - SVIET",
         "description": "The Skillkart Placement Drive at SVIET was a huge success! With over 60+ enthusiastic students from B.Tech (CSE), MCA and MBA (Batch 2025) participating, the day was filled with excitement and",
         "date": "04st October 2024"
     },
     {
         id: 10,
-        imgSrc: "/Recruiters/l&t.jpeg",
+        imgSrc: "https://static.shubhampf.cloud/Recruiters/lt.jpeg",
         "title": "L & T",
         title: "Strategic Collaboration with L&T EduTech",
         description: "L&T EduTech team visited SVIET and signed a Memorandum of Understanding (MoU), paving the way for collaborative initiatives, industry-aligned training, and enhanced career opportunities for our students."

@@ -10,7 +10,7 @@ const managementTeam = [
     {
         name: "Prof. (Dr.) Sanjeev Saini",
         position: "Director Academics",
-        image: "/Management/1.jpeg",
+        image: "https://static.shubhampf.cloud/management/1.jpeg",
         message: [
             `Modern education must go beyond preparing students for jobs—it should equip them for lifelong learning, leadership, and meaningful contributions to society. Guided by this belief, Swami Vivekanand Institute of Engineering & Technology (SVIET) has built an academic ecosystem where knowledge meets innovation, and values shape vision.`,
             `At Swami Vivekanand Institute of Engineering & Technology (SVIET), our vision goes beyond delivering academic content—we are committed to creating an environment where innovation, critical thinking, and lifelong learning flourish. Since our establishment in 2004, we have embraced the evolving demands of industry and society, designing academic programs that are practical, relevant, and future-ready.`,

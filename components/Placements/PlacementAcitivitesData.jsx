@@ -49,7 +49,7 @@ const PlacementAcitivitesData = () => {
         {
             title: "Electrical Vehicle Expo",
             description: "Visit for Mechanical Engineering Students was organised to Electrical Vehicle Expo-2023 at Exhibition Ground Sector-34 Chandigarh",
-            image: "/Recruiters/sdasd.jpeg"
+            image: "https://static.shubhampf.cloud/Recruiters/sdasd.jpeg"
         },
         {
             title: "Guru Nanak Group of Industries, Rajpura",

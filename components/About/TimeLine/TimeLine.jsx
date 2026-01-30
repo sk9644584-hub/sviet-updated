@@ -22,7 +22,7 @@ const Timeline = () => {
                     <div className="relative  flex-1 w-full md:min-h-[350px] sm:min-h-[300px] min-h-[250px] h-[500px] max-h-[500px]">
                         <Image
                             loading="lazy"
-                            src="/Home/about-auditorium.webp"
+                            src="https://static.shubhampf.cloud/about-auditorium.webp"
                             alt="Sviet auditorium"
                             fill
                             className="  object-contain"

@@ -31,13 +31,13 @@ const importantLinks = [
     { title: "RTI", href: "/rti" },
     {
         title: "IQAC",
-        href:"https://static.shubhampf.cloud/ReformationofIQAC.pdf",
+        href: "https://static.shubhampf.cloud/ReformationofIQAC.pdf",
         target: true
     },
     { title: "NAAC", href: "http://naac.gov.in/index.php/en/", target: true },
     {
         title: "SSR",
-        href: "/ssr.pdf",
+        href: "https://static.shubhampf.cloud/ssr.pdf",
         target: true
     },
     { title: "NAD", href: "https://nad.gov.in/", target: true },

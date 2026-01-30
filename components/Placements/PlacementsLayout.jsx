@@ -59,7 +59,7 @@ const PlacementsLayout = () => {
                                                 className={` relative w-[20rem] lg:hidden mb-10 h-[13rem] max-h-[13rem] `}
                                             >
                                                 <Image
-                                                    src={"/Management/2.jpg"}
+                                                    src={"https://static.shubhampf.cloud/management/2.jpg"}
                                                     alt={"Adv. Shubham Garg"}
                                                     fill
                                                     loading="lazy"
@@ -88,7 +88,7 @@ const PlacementsLayout = () => {
                                                 className={`hidden lg:flex relative min-w-[13rem]  lg:w-[18rem] max-h-[15rem] h-[15rem] xl:max-h-[13rem] xl:h-[13rem] lg:h-[15rem]  lg:max-h-[15rem] `}
                                             >
                                                 <Image
-                                                    src={"/Management/2.jpg"}
+                                                    src={"https://static.shubhampf.cloud/management/2.jpg"}
                                                     alt={"Adv. Shubham Garg"}
                                                     fill
                                                     loading="lazy"
@@ -204,7 +204,7 @@ const PlacementsLayout = () => {
                                     <div className="space-y-4  text-gray-700 text-sm leading-relaxed">
                                         <div className='h-[500px] w-full'>
                                             <img className='h-full w-full rounded-md'
-                                                src={"/placements/image.jpeg"}
+                                                src={"https://static.shubhampf.cloud/management/image.jpeg"}
                                                 loading="lazy"
                                             />
                                         </div>
