@@ -1,14 +1,16 @@
 import React from 'react';
 
+import Image from 'next/image';
+
 const ImageCard = ({ item }) => {
     return (
-        <div className="relative group overflow-hidden rounded-2xl shadow-lg transform transition-transform duration-300 hover:-translate-y-2">
-            <img
+        <div className="relative group overflow-hidden rounded-2xl shadow-lg transform transition-transform duration-300 hover:-translate-y-2 h-72 w-full">
+            <Image
                 src={item.img}
                 alt={item.title}
-                loading="lazy"
-                decoding='async'
-                className="w-full h-72 object-cover transition-all duration-500 group-hover:scale-110"
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                className="object-cover transition-all duration-500 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
             <div className="absolute inset-0 p-6 flex flex-col items-start justify-end">

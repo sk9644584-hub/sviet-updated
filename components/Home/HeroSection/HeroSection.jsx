@@ -54,7 +54,6 @@ export function HeroSection({ images }) {
                                             src={images[index].imageUrl}
                                             alt={`College Banner ${index + 1}`}
                                             fill
-                                            loading="lazy"
                                             style={{ objectFit: 'cover' }}
                                             className="z-0"
                                             priority={true}

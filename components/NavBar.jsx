@@ -2,7 +2,7 @@ import React from 'react'
 import { Header, MainNav, TopBanner } from './Home'
 import NavScrollProgress from './NavScrollProgress'
 
-const NavBar = async ({ topBanners }) => {
+const NavBar = ({ topBanners }) => {
 
     return (
         <div id="site-navbar" className="relative">
