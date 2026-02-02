@@ -233,7 +233,7 @@ export function ContactUsPage() {
         // try catch block
 
         try {
-            const BACKEND_URL = "/api/enquiry";
+            const BACKEND_URL = "/enquiry";
             await axiosInstance.post(BACKEND_URL,form)
 
             alert("Enquiry submitted successfully!")
