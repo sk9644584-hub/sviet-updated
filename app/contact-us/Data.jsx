@@ -27,7 +27,6 @@ function validateEmail(email) {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
 }
 
-// ...existing code...
 
 function filterNumberInput(value, allowPlus = false, allowDash = false) {
     // Only allow up to 10 digits (excluding + and -)
@@ -94,8 +93,6 @@ function validatePhone(phone) {
     return true
 }
 
-
-// ...existing
 export function ContactUsPage() {
     const [form, setForm] = useState({
         name: "",
