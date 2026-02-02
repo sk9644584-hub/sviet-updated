@@ -20,6 +20,7 @@ import {
     GraduationCap,
     Users
 } from "lucide-react"
+import axiosInstance from "@/lib/axiosInstance"
 
 function validateEmail(email) {
     // Simple email regex
@@ -103,10 +104,8 @@ export function ContactUsPage() {
         city: "",
         course: "",
         program: "",
-        dob: ""
     })
     const [errors, setErrors] = useState({})
-    const [dob, setDob] = useState({ dd: "", mm: "", yyyy: "" })
     const [loading, setLoading] = useState(false) // <-- loading state added
 
     const contactDetails = [
@@ -219,18 +218,7 @@ export function ContactUsPage() {
         setForm({ ...form, program: value })
     }
 
-    const handleDobChange = (e) => {
-        const { name, value } = e.target
-        // Only allow numbers
-        let filtered = value.replace(/[^0-9]/g, "")
-        // Limit length
-        if (name === "dd" && filtered.length > 2) filtered = filtered.slice(0, 2)
-        if (name === "mm" && filtered.length > 2) filtered = filtered.slice(0, 2)
-        if (name === "yyyy" && filtered.length > 4) filtered = filtered.slice(0, 4)
-        const newDob = { ...dob, [name]: filtered }
-        setDob(newDob)
-        setForm({ ...form, dob: `${newDob.dd}-${newDob.mm}-${newDob.yyyy}` })
-    }
+
 
     const handleSubmit = async (e) => {
         e.preventDefault()
@@ -241,23 +229,26 @@ export function ContactUsPage() {
         if (!validatePhone(form.phone)) {
             newErrors.phone = "Please enter a valid phone number."
         }
-        if (!/^\d{2}$/.test(dob.dd) || Number(dob.dd) < 1 || Number(dob.dd) > 31) {
-            newErrors.dd = "Day must be 2 digits (01-31)."
-        }
-        if (!/^\d{2}$/.test(dob.mm) || Number(dob.mm) < 1 || Number(dob.mm) > 12) {
-            newErrors.mm = "Month must be 2 digits (01-12)."
-        }
-        if (!/^\d{4}$/.test(dob.yyyy)) {
-            newErrors.yyyy = "Year must be 4 digits."
-        }
         setErrors(newErrors)
         if (Object.keys(newErrors).length > 0) return
 
         setLoading(true) // <-- set loading true
         // try catch block
 
-        alert("submission done")
-        setLoading(false) // <-- set loading false
+        try {
+            const BACKEND_URL = "/api/enquiry";
+            await axiosInstance.post(BACKEND_URL,form)
+
+            alert("Enquiry submitted successfully!")
+
+            setForm({ name: "", email: "", phone: "", city: "", course: "", program: "" })
+        } catch (error) {
+            console.error("Submission error:", error)
+            alert("Something went wrong. Please try again.")
+        } finally {
+            setLoading(false)
+        }
+
     }
 
     return (
@@ -344,7 +335,7 @@ export function ContactUsPage() {
                                                     name="phone"
                                                     value={form.phone}
                                                     onChange={handleChange}
-                                                    placeholder="Enter Your Number"
+                                                    placeholder="Enter Mobile Number (eg. 1234567890)"
                                                     type="text"
                                                     className="border-gray-300"
                                                     autoComplete="off"
@@ -356,7 +347,7 @@ export function ContactUsPage() {
                                             <Input
                                                 name="city"
                                                 onChange={handleChange}
-                                                placeholder="Enter Your City"
+                                                placeholder="Enter Your district/state/address"
                                                 className="border-gray-300"
                                                 autoComplete="off"
                                             />
@@ -395,55 +386,6 @@ export function ContactUsPage() {
                                                             ))}
                                                     </SelectContent>
                                                 </Select>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <label className="mb-2 block text-sm font-medium text-gray-700">
-                                                How old are you?
-                                            </label>
-                                            <div className="grid grid-cols-3 gap-4">
-                                                <div>
-                                                    <Input
-                                                        placeholder="DD"
-                                                        maxLength={2}
-                                                        className="border-gray-300"
-                                                        name="dd"
-                                                        value={dob.dd}
-                                                        onChange={handleDobChange}
-                                                        autoComplete="off"
-                                                    />
-                                                    {errors.dd && (
-                                                        <p className="text-red-500 text-xs">{errors.dd}</p>
-                                                    )}
-                                                </div>
-                                                <div>
-                                                    <Input
-                                                        placeholder="MM"
-                                                        maxLength={2}
-                                                        className="border-gray-300"
-                                                        name="mm"
-                                                        value={dob.mm}
-                                                        onChange={handleDobChange}
-                                                        autoComplete="off"
-                                                    />
-                                                    {errors.mm && (
-                                                        <p className="text-red-500 text-xs">{errors.mm}</p>
-                                                    )}
-                                                </div>
-                                                <div>
-                                                    <Input
-                                                        placeholder="YYYY"
-                                                        maxLength={4}
-                                                        className="border-gray-300"
-                                                        name="yyyy"
-                                                        value={dob.yyyy}
-                                                        onChange={handleDobChange}
-                                                        autoComplete="off"
-                                                    />
-                                                    {errors.yyyy && (
-                                                        <p className="text-red-500 text-xs">{errors.yyyy}</p>
-                                                    )}
-                                                </div>
                                             </div>
                                         </div>
                                         <Button
