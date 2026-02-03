@@ -74,9 +74,8 @@ export function CollegeOverview() {
                                             loading="lazy"
                                             src={item.imageQuery}
                                             alt={item.title}
-                                            layout="fill"
-                                            objectFit="cover"
-                                            className="absolute inset-0"
+                                            fill
+                                            className="absolute object-cover inset-0"
                                         />
                                         {/* Overlay and text, hidden by default, visible on group-hover */}
                                         <div className="absolute inset-0 bg-black/70 flex flex-col items-center justify-center p-4 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">

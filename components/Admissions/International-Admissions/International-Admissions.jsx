@@ -205,9 +205,8 @@ const InternationalAdmissions = ({ overviews }) => {
                                                 loading="lazy"
                                                 src={item}
                                                 alt={`${`image-` + 1}`}
-                                                layout="fill"
-                                                objectFit="cover"
-                                                className="absolute inset-0"
+                                                fill
+                                                className="absolute object-cover inset-0"
                                             />
 
                                         </CardContent>

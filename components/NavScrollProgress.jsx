@@ -22,7 +22,7 @@ export default function NavScrollProgress() {
     }, [])
 
     return (
-        <div aria-hidden="true" className="w-full h-0.5 bg-transparent">
+        <div aria-hidden="true" className="w-full h-0 bg-transparent">
             <div
                 className="h-0.5 bg-[#007bff] transition-all duration-150"
                 style={{ width: `${progress}%` }}

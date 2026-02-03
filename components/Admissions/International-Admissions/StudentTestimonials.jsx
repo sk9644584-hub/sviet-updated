@@ -76,9 +76,8 @@ export function StudentTestimonials({ testimonials = t }) {
                                                     loading="lazy"
                                                     src={testimonial.image || "/placeholder.svg"}
                                                     alt={testimonial.name}
-                                                    layout="fill"
-                                                    objectFit="cover"
-                                                    className="rounded-full"
+                                                    fill
+                                                    className="object-cover rounded-full"
                                                 />
                                             </div>
                                             <div>

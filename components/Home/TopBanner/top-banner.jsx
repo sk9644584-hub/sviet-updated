@@ -1,7 +1,8 @@
 "use client"
-let marqueeAnim = null
 import { useEffect, useRef, useState } from "react"
 import Link from "next/link"
+
+let marqueeAnim = null
 
 const marqueeAnimation = (element, speed = 50) => {
   const totalWidth = element.scrollWidth / 2 // since we're duplicating
@@ -19,7 +20,6 @@ const marqueeAnimation = (element, speed = 50) => {
     }
   )
 }
-
 
 const TopBanner = ({ skills }) => {
   const skillsElementRef = useRef(null)
@@ -46,15 +46,19 @@ const TopBanner = ({ skills }) => {
 
   const handleResize = () => setWindowWidth(window.innerWidth)
   useEffect(() => {
+    // Set initial width and add event listener
+    setWindowWidth(window.innerWidth)
     window.addEventListener("resize", handleResize)
     return () => window.removeEventListener("resize", handleResize)
   }, [])
 
   return (
-    <div className="relative bg-[#f7f7f7] overflow-hidden text-white">
+    // CHANGE 1: Replaced 'bg-yellow-300' with 'bg-amber-400' for a bolder look.
+    // CHANGE 2: Added 'border-t-0' to explicitly remove any top border.
+    <div className="relative bg-amber-400 overflow-hidden text-white border-t-0">
       <div
         id="skills"
-        className=" w-max whitespace-nowrap py-2 px-5 lg:px-7 flex"
+        className="w-max whitespace-nowrap py-2 px-5 lg:px-7 flex"
         ref={skillsElementRef}
       >
         <div className="flex gap-8 lg:gap-24">
@@ -63,13 +67,13 @@ const TopBanner = ({ skills }) => {
               {
                 skill?.isNewItem && <img loading="lazy" className="inline mr-2" src="/blinking_new.gif" alt="blinking_new" />
               }
-              {skill.title != "" && <span className="text-red-400 font-medium">
+              {skill.title != "" && <span className="text-red-600 font-bold"> {/* Made title slightly darker and bolder for better contrast on amber */}
                 {skill.title} :
               </span>}
-              {skill.description != "" && <span className="ml-1 text-[#28a745] font-normal">
+              {skill.description != "" && <span className="ml-1 text-green-700 font-medium"> {/* Made description slightly darker for contrast */}
                 {skill.description}
               </span>}
-              {skill.linkRef != "" && <Link href={skill.linkRef} className="ml-1 underline font-light text-[#007bff] hover:underline">
+              {skill.linkRef != "" && <Link href={skill.linkRef} className="ml-1 underline font-medium text-blue-700 hover:text-blue-900"> {/* Made link darker for contrast */}
                 {skill.btnText}
               </Link>}
 
@@ -78,7 +82,6 @@ const TopBanner = ({ skills }) => {
         </div>
       </div>
     </div>
-
   )
 }
 

@@ -63,9 +63,9 @@ const EmpowerYourFuture = ({ isShown = false }) => {
                                                 loading="lazy"
                                                 src={item.imageQuery}
                                                 alt={item.title}
-                                                layout="fill"
-                                                objectFit="cover"
-                                                className="absolute  inset-0"
+                                                fill
+                                                
+                                                className="absolute object-cover inset-0"
                                             />
                                             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
                                                 <h3 className="text-xl font-semibold text-white">{item.title}</h3>

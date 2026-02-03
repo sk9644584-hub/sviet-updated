@@ -77,9 +77,9 @@ A problem encourages creative efforts to meet the need. Where everyone else is k
                                                 loading="lazy"
                                                 src={project.image || "/placeholder.svg"}
                                                 alt={project.title}
-                                                layout="fill"
-                                                objectFit="cover"
-                                                className="transition-transform duration-300 hover:scale-105"
+                                                fill
+                                                
+                                                className="transition-transform duration-300 hover:scale-105 object-cover"
                                             />
                                         </div>
                                         <CardContent className="px-6 py-3">
