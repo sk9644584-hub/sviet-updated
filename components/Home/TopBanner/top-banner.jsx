@@ -70,7 +70,7 @@ const TopBanner = ({ skills }) => {
               {skill.title != "" && <span className="text-[#D32F2F] font-bold"> {/* Made title slightly darker and bolder for better contrast on amber */}
                 {skill.title} :
               </span>}
-              {skill.description != "" && <span className="ml-1 text-[#1A237E] font-medium"> {/* Made description slightly darker for contrast */}
+              {skill.description != "" && <span className="ml-1 text-red-900 font-medium"> {/* Made description slightly darker for contrast */}
                 {skill.description}
               </span>}
               {skill.linkRef != "" && <Link href={skill.linkRef} className="ml-1 underline font-medium text-[#0288D1] hover:text-blue-900"> {/* Made link darker for contrast */}
