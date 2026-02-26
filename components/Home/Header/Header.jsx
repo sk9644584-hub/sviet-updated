@@ -120,15 +120,26 @@ export function Header() {
                                                                     {col.title}
                                                                 </h6>
                                                             )}
-                                                            <ul className="ml-2 space-y-1">
+                                                            <ul className="ml-2 space-y-3 mt-2">
                                                                 {col.links.map((link, linkIndex) => (
-                                                                    <li key={linkIndex}>
+                                                                    <li key={linkIndex} className="space-y-2">
                                                                         <Link
                                                                             href={link.href}
-                                                                            className="hover:underline"
+                                                                            className="hover:underline block font-medium"
                                                                         >
                                                                             {link.name}
                                                                         </Link>
+                                                                        {link.subLinks && link.subLinks.length > 0 && (
+                                                                            <ul className="ml-4 space-y-2 border-l border-white/20 pl-3">
+                                                                                {link.subLinks.map((sub, subIdx) => (
+                                                                                    <li key={subIdx}>
+                                                                                        <Link href={sub.href} className="hover:underline text-sm opacity-90 block">
+                                                                                            {sub.name}
+                                                                                        </Link>
+                                                                                    </li>
+                                                                                ))}
+                                                                            </ul>
+                                                                        )}
                                                                     </li>
                                                                 ))}
                                                             </ul>

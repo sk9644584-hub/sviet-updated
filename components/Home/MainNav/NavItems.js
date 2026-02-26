@@ -90,8 +90,15 @@ export const navItems = [
                         name: "UGC 2(f) Recognition Letter",
                         href: "https://static.shubhampf.cloud/2FRecognitionLetter591-2025.pdf"
                     },
-
-
+                    {
+                        name: "Annual Accounts",
+                        href: "#",
+                        subLinks: [
+                            { name: "2024-25", href: "https://static.shubhampf.cloud/Documents/AnnualAccounts/BalanceSheet2024-25.pdf" },
+                            { name: "2023-24", href: "https://static.shubhampf.cloud/Documents/AnnualAccounts/balancesheet2023-24.pdf" },
+                            { name: "2022-23", href: "https://static.shubhampf.cloud/Documents/AnnualAccounts/balancesheet2022-23.pdf" },
+                        ]
+                    }
                 ],
             }
         ]

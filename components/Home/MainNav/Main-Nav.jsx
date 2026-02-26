@@ -8,6 +8,12 @@ import {
     DropdownMenuContent,
     DropdownMenuTrigger
 } from "@/components/ui/dropdown-menu"
+import {
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger
+} from "@/components/ui/accordion"
 import { navItems } from "./NavItems"
 
 export function MainNav() {
@@ -49,7 +55,7 @@ export function MainNav() {
                                         </span>
                                     </DropdownMenuTrigger>
                                     <DropdownMenuContent
-                                        className="bg-white shadow-lg py-4 rounded-none border-t-0 "
+                                        className="bg-white shadow-lg py-4 rounded-none border-t-0 !overflow-visible"
                                         // Align content to the start of the trigger
                                         align="start"
                                         // Align content directly below trigger
@@ -63,15 +69,39 @@ export function MainNav() {
                                                             {col.title}
                                                         </h5>
                                                     )}
-                                                    <ul className="space-y-2">
+                                                    <ul className="space-y-1">
                                                         {col.links.map((link, linkIndex) => (
-                                                            <li key={linkIndex}>
-                                                                <Link
-                                                                    href={link.href}
-                                                                    className="text-gray-700 text-sm  hover:text-[#007bff]"
-                                                                >
-                                                                    {link.name}
-                                                                </Link>
+                                                            <li key={linkIndex} className="relative w-full">
+                                                                {link.subLinks && link.subLinks.length > 0 ? (
+                                                                    <Accordion type="single" collapsible className="w-full">
+                                                                        <AccordionItem value={link.name} className="border-b-0 space-y-0 pb-0">
+                                                                            <AccordionTrigger className="py-1 text-sm text-left text-gray-700 hover:text-[#007bff] hover:no-underline flex justify-between w-full font-medium">
+                                                                                {link.name}
+                                                                            </AccordionTrigger>
+                                                                            <AccordionContent className="pb-1 pt-1 ml-3 border-l-2 border-gray-100 pl-3">
+                                                                                <ul className="space-y-2">
+                                                                                    {link.subLinks.map((sub, subIdx) => (
+                                                                                        <li key={subIdx}>
+                                                                                            <Link
+                                                                                                href={sub.href}
+                                                                                                className="text-gray-500 text-xs hover:text-[#007bff] block transition-colors"
+                                                                                            >
+                                                                                                {sub.name}
+                                                                                            </Link>
+                                                                                        </li>
+                                                                                    ))}
+                                                                                </ul>
+                                                                            </AccordionContent>
+                                                                        </AccordionItem>
+                                                                    </Accordion>
+                                                                ) : (
+                                                                    <Link
+                                                                        href={link.href}
+                                                                        className="text-gray-700 text-sm hover:text-[#007bff] font-medium block py-1"
+                                                                    >
+                                                                        {link.name}
+                                                                    </Link>
+                                                                )}
                                                             </li>
                                                         ))}
                                                     </ul>
