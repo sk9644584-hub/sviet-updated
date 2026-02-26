@@ -95,11 +95,11 @@ export function Header() {
                             <span className="sr-only">Toggle main menu</span>
                         </Button>
                     </SheetTrigger>
-                    <SheetContent side="left" className="bg-[#007bff] text-white">
+                    <SheetContent side="left" className="bg-[#007bff] text-white overflow-y-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
                         <SheetHeader className={"text-white border-b border-white/20 pb-3 mb-0"}>
                             <SheetTitle className={"text-white pb-3 mb-0"}>Quick Links</SheetTitle>
                         </SheetHeader>
-                        <nav className="grid gap-4 pt-0 p-4 text-lg font-medium">
+                        <nav className="grid gap-4 pt-0 p-4 text-lg font-medium pb-20">
                             <Accordion type="single" collapsible className="w-full">
                                 {navItems.map(item =>
                                     item.dropdown && item.dropdown.length > 0 ? (
