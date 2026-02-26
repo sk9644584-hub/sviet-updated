@@ -5,7 +5,7 @@ export const internationalComplaintData = [
         srNo: 1,
         position: "Presiding Officer",
         name: "Dr. Vandana",
-        Designation: "AssociateProfessor & HOD(CA)",
+        Designation: "Associate Professor & HOD(CA)",
         contact: "9877797457"
     },
     {
@@ -14,7 +14,7 @@ export const internationalComplaintData = [
         name:
             "Er. Jarnail Singh\n\nEr. Shivani Guleria",
         contact: "8437391235\n\n6239138362",
-        Designation: "AssistantProfessor & HOD(CSE)\n\nAssistantProfessor & HOD(CE)"
+        Designation: "Assistant Professor & HOD (CSE)\n\nAssistant Professor & HOD (CE)"
     },
     {
         srNo: 3,
