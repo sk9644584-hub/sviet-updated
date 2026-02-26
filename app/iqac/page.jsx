@@ -150,25 +150,36 @@ export default function IqacPage() {
                                                     Teachers
                                                 </TableCell>
                                                 <TableCell className="font-semibold py-4 px-10 space-y-1">
-                                                    <div>Dr. Hartripat Kaur </div>
+                                                    <div>Dr. Vandana </div>
                                                     <div>Dr. Neeraj Kumar</div>
                                                     <div>Er. Jarnail Singh</div>
                                                     <div>Ms. Gurwinder Kaur</div>
                                                     <div>Dr. Indu Batra</div>
-                                                    <div>Er. Vishal Garg</div>
                                                 </TableCell>
                                                 <TableCell className="font-semibold py-4 px-10 space-y-1">
-                                                    <div>Associate Professor</div>
+                                                    <div>HOD, CSE</div>
                                                     <div>HOD, MBA</div>
                                                     <div>HOD, MCA</div>
                                                     <div>HOD, Applied Science</div>
-                                                    <div>Professor</div>
-                                                    <div>Director Secretarial & Administration, Management Representative</div>
+                                                    <div>Associate Professor</div>
                                                 </TableCell>
                                             </TableRow>
 
                                             <TableRow className="hover:bg-gray-50">
                                                 <TableCell className="font-semibold px-4">3</TableCell>
+                                                <TableCell className="py-4 max-w-[300px] whitespace-normal break-words font-medium px-10 text-blue-900">
+                                                   Management Member
+                                                </TableCell>
+                                                <TableCell className="font-semibold py-4 px-10 space-y-1">
+                                                    <div>Er. Vishal Garg</div>
+                                                </TableCell>
+                                                <TableCell className="font-semibold py-4 px-10 space-y-1">
+                                                    <div>Director Secretarial & Administration, Management Representative</div>
+                                                </TableCell>
+                                            </TableRow>
+
+                                            <TableRow className="hover:bg-gray-50">
+                                                <TableCell className="font-semibold px-4">4</TableCell>
                                                 <TableCell className="py-4 max-w-[300px] whitespace-normal break-words font-medium px-10 text-blue-900">
                                                     Senior Administrative Officer
                                                 </TableCell>
@@ -176,14 +187,14 @@ export default function IqacPage() {
                                                     <div>Dr. Pertik Garg</div>
                                                     <div>Adv. Shubham Garg</div>
                                                     <div>Er. Ankur Gill</div>
-                                                    <div>Er. Tarandeep Singh</div>
+                                                    <div>Mr. Sarabjeet Singh</div>
 
                                                 </TableCell>
                                                 <TableCell className="font-semibold py-4 px-10 space-y-1">
                                                     <div>Principal</div>
                                                     <div>Director Training & Placement</div>
                                                     <div>Director Operations</div>
-                                                    <div>Coordinator, DSW</div>
+                                                    <div>Dean, DSW</div>
                                                 </TableCell>
                                             </TableRow>
 

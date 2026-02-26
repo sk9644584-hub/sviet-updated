@@ -126,7 +126,7 @@ const Page = () => {
                     </div>
                 </div>
             </section>
-            <section className="py-8 bg-white">
+            {/* <section className="py-8 bg-white">
                 <div className="container mx-auto px-4">
                     <div className="max-w-6xl mx-auto">
                         <h2 className="text-3xl font-bold text-gray-900 mb-8">
@@ -180,7 +180,7 @@ const Page = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             <section className="py-8 bg-white">
                 <div className="container mx-auto px-4">

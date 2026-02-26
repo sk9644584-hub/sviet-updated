@@ -43,13 +43,13 @@ const importantLinks = [
     { title: "NAD", href: "https://nad.gov.in/", target: true },
     { title: "AISHE", href: "https://aishe.gov.in/", target: true },
     { title: "ABC", href: "https://www.abc.gov.in/about.php", target: true },
-    { title: "Mandatory Disclosure", href: "https://static.shubhampf.cloud/MandatoryDisclosure-SVIET.pdf", target: true },
+    // { title: "Mandatory Disclosure", href: "https://static.shubhampf.cloud/MandatoryDisclosure-SVIET.pdf", target: true },
 ];
 
 const statutoryCells = [
     { title: "SC/ST Committee", href: '/sc-st-committee' },
     { title: "Grievance Redressal Committee", href: "/grievance-redressal-committee" },
-    { title: "Women Grievances Cell", href: "/womens-cell" },
+    // { title: "Women Grievances Cell", href: "/womens-cell" },
     { title: "Anti-ragging Committee", href: "/anti-ragging-policy" },
     { title: "Internal Complaints Cell", href: "/internal-complaint-cell" },
     { title: "Women Helpline", href: "https://static.shubhampf.cloud/empoweryourfuture/4.jpeg", target: true },

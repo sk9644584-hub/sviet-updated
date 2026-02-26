@@ -6,7 +6,7 @@ export const scstdata = [
         srNo: 2, name: "Mr. Himanshu Rao", Designation: "Co-Ordinator", Emails: "registrar@sviet.org.in"
     },
     {
-        srNo: 3, name: "Dr. Ankur Gill", Designation: "Member", Emails: "registrar@sviet.org.in"
+        srNo: 3, name: "Er. Ankur Gill", Designation: "Member", Emails: "registrar@sviet.org.in"
     },
     {
         srNo: 4, name: "Mr. Talwinder Singh", Designation: "Member", Emails: "registrar@sviet.org.in"
@@ -21,8 +21,8 @@ export const sgrcData = [
     {
         srNo: 1,
         composition: "Chairperson",
-        members: ["Er. Tarandeep Singh"],
-        designation: ["Coordinator (Student Welfare)"]
+        members: ["Mr. Sarabjeet Singh"],
+        designation: ["Dean (Student Welfare)"]
     },
     {
         srNo: 2,
@@ -33,9 +33,9 @@ export const sgrcData = [
             "Ms. Gurwinder Kaur"
         ],
         designation: [
-            "Professor (MBA)",
-            "Professor (ECE)"
-            , "Associate Professor (CE)"
+            "AssociateProfessor & HOD (MBA)",
+            "Associate Professor (Applied Sciences)"
+            , "Associate Professor & HOD(Applied Sciences)"
         ]
     },
     {
@@ -100,17 +100,17 @@ export const antiraggingdata = [
     },
     {
         srNo: 2,
-        name: "Dr. Ankur Gill",
+        name: "Er. Manik Dhiman",
         designation: "Committee Coordinator"
     },
     {
         srNo: 3,
-        name: "Er. Jarnail Singh",
+        name: "Dr. Vandana",
         designation: "Member"
     },
     {
         srNo: 4,
-        name: "Dr. Hartripat Kaur",
+        name: "Er. Ankur Gill",
         designation: "Member"
     },
     {
@@ -134,9 +134,9 @@ export const internationalComplaintData = [
     {
         srNo: 1,
         position: "Presiding Officer",
-        name: "Dr. Khushboo Bansal",
-        Designation: "Professor (AI)",
-        contact: "7837556661"
+        name: "Dr. Vandana",
+        Designation: "AssociateProfessor & HOD(CA)",
+        contact: "9877797457"
     },
     {
         srNo: 2,
@@ -144,7 +144,7 @@ export const internationalComplaintData = [
         name:
             "Er. Jarnail Singh\n\nEr. Shivani Guleria",
         contact: "8437391235\n\n6239138362",
-        Designation: "Associate Professor (CSE)\n\nAssociate Professor (CE)"
+        Designation: "AssistantProfessor & HOD(CSE)\n\nAssistantProfessor & HOD(CE)"
     },
     {
         srNo: 3,
@@ -178,7 +178,7 @@ export const obcData = [
         srNo: 2, name: "Mr. Himanshu Rao", Designation: "Co-Ordinator", Emails: "registrar@sviet.org.in"
     },
     {
-        srNo: 3, name: "Dr. Ankur Gill", Designation: "Member", Emails: "registrar@sviet.org.in"
+        srNo: 3, name: "Er. Ankur Gill", Designation: "Member", Emails: "registrar@sviet.org.in"
     },
     {
         srNo: 4, name: "Mr. Talwinder Singh", Designation: "Member", Emails: "registrar@sviet.org.in"
