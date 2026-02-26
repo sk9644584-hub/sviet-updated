@@ -10,6 +10,7 @@ import {
     AccordionItem,
     AccordionTrigger
 } from "@/components/ui/accordion"
+import { SearchBox } from "@/components/SearchBox"
 
 
 import { navItems } from "../MainNav/NavItems"
@@ -52,31 +53,30 @@ export function Header() {
                             </div>
                         </div>
                     </Link>
-                    <div className=" flex items-center ">
-                        <Image
-                            loading="lazy"
-                            className="hidden sm:block"
-                            src="/Ranks/1.png"
-                            alt="Rank 1"
-                            width={100}
-                            height={100}
-                        />
-                        <Image
-                            className="hidden sm:block"
-                            loading="lazy"
-                            src="/Ranks/2.png"
-                            alt="Rank 2"
-                            width={100}
-                            height={100}
-                        />
-                        <Image
-                            className="hidden sm:block"
-                            loading="lazy"
-                            src="/Ranks/3.png"
-                            alt="Rank 3"
-                            width={100}
-                            height={100}
-                        />
+                    <div className=" flex items-center gap-4">
+                        <div className="hidden sm:flex items-center">
+                            <Image
+                                loading="lazy"
+                                src="/Ranks/1.png"
+                                alt="Rank 1"
+                                width={100}
+                                height={100}
+                            />
+                            <Image
+                                loading="lazy"
+                                src="/Ranks/2.png"
+                                alt="Rank 2"
+                                width={100}
+                                height={100}
+                            />
+                            <Image
+                                loading="lazy"
+                                src="/Ranks/3.png"
+                                alt="Rank 3"
+                                width={100}
+                                height={100}
+                            />
+                        </div>
 
                         <Image
                             loading="lazy"
@@ -85,6 +85,10 @@ export function Header() {
                             width={100}
                             height={100}
                         />
+
+                        <div className="hidden md:block">
+                            <SearchBox />
+                        </div>
                     </div>
                 </div>
 
