@@ -43,17 +43,17 @@ const data =
         },
         {
             srNo: 2,
-            name: "Dr. Ankur Gill",
+            name: "Er. Manik Dhiman",
             designation: "Committee Coordinator"
         },
         {
             srNo: 3,
-            name: "Er. Jarnail Singh",
+            name: "Dr. Vandana",
             designation: "Member"
         },
         {
             srNo: 4,
-            name: "Dr. Hartripat Kaur",
+            name: "Er. Ankur Gill",
             designation: "Member"
         },
         {

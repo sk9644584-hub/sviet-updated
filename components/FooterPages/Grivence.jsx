@@ -4,8 +4,8 @@ const data = [
     {
         srNo: 1,
         composition: "Chairperson",
-        members: ["Er. Tarandeep Singh"],
-        designation: ["Coordinator (Student Welfare)"]
+        members: ["Er. Sarabjeet Singh"],
+        designation: ["Dean (Student Welfare)"]
     },
     {
         srNo: 2,
@@ -17,9 +17,9 @@ const data = [
         ],
         designation: [
 
-            "Professor (MBA)",
-            "Professor (ECE)"
-            , "Associate Professor (CE)"
+            "Associate Professor & HOD (MBA)",
+            "Associate Professor (Applied Sciences)"
+            , "Associate Professor (Applied Sciences)"
         ]
     },
     {

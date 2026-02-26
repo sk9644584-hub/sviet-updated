@@ -84,7 +84,7 @@ export function MainNav() {
                                                                                         <li key={subIdx}>
                                                                                             <Link
                                                                                                 href={sub.href}
-                                                                                                className="text-gray-500 text-xs hover:text-[#007bff] block transition-colors"
+                                                                                                className="text-gray-500 text-[0.80rem] hover:text-[#007bff] block transition-colors"
                                                                                             >
                                                                                                 {sub.name}
                                                                                             </Link>

@@ -33,9 +33,9 @@ export const sgrcData = [
             "Ms. Gurwinder Kaur"
         ],
         designation: [
-            "AssociateProfessor & HOD (MBA)",
+            "Associate Professor & HOD (MBA)",
             "Associate Professor (Applied Sciences)"
-            , "Associate Professor & HOD(Applied Sciences)"
+            , "Assistant Professor & HOD(Applied Sciences)"
         ]
     },
     {
