@@ -108,6 +108,10 @@ export const navItems = [
                             { name: "Internal Complaint Committee", href: "https://static.shubhampf.cloud/Committees/InternalComplaintCommittee.pdf" },
                             { name: "Anti Ragging Committee", href: "http://static.shubhampf.cloud/Committees/AntiRaggingCommittee.pdf" },
                         ]
+                    },
+                    {
+                        name: "Institutional Development Plan",
+                        href: "https://static.shubhampf.cloud/Documents/InstitutionalDevelopmentPlan.pdf"
                     }
                 ],
             }

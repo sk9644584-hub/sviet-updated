@@ -1,0 +1,835 @@
+[
+  {
+    "S. No.": 1,
+    "Name of the Staff": "Dr. Savita Rani",
+    "Designation/Position": "Senior Professor",
+    "Department": "Civil Engineering",
+    "Qualification": "PhD"
+  },
+  {
+    "S. No.": 2,
+    "Name of the Staff": "Dr. Sanjay Goel",
+    "Designation/Position": "Professor",
+    "Department": "Civil Engineering",
+    "Qualification": "PhD"
+  },
+  {
+    "S. No.": 3,
+    "Name of the Staff": "Ms. Gurwinder Kaur",
+    "Designation/Position": "Associate Professor",
+    "Department": "Civil Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 4,
+    "Name of the Staff": "Ms. Richa Verma",
+    "Designation/Position": "Associate Professor",
+    "Department": "Civil Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 5,
+    "Name of the Staff": "Ms. Sakshi Gautam ",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Civil Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 6,
+    "Name of the Staff": "Ms. Lata Duggal",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Civil Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 7,
+    "Name of the Staff": "Ms. Ruchika Sharma",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Civil Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 8,
+    "Name of the Staff": "Mr. Tarandeep Singh",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Civil Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 9,
+    "Name of the Staff": "Ms. Ifrah Wahid",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Civil Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 10,
+    "Name of the Staff": "Ms. Shivani Guleria ",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Civil Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 11,
+    "Name of the Staff": "Mr. Kaushik Bharti ",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Civil Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 12,
+    "Name of the Staff": "Mr. Tajamul Saqib",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Civil Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 13,
+    "Name of the Staff": "Ms. Kavita",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Civil Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 14,
+    "Name of the Staff": "Ms. Amrit Sudha ",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Civil Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 15,
+    "Name of the Staff": "Mr. Vedic Sahota ",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Civil Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 16,
+    "Name of the Staff": "Mr. Nilesh",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Civil Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 17,
+    "Name of the Staff": "Mr. Rakesh",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Civil Engineering",
+    "Qualification": "UG"
+  },
+  {
+    "S. No.": 18,
+    "Name of the Staff": "Mr. Akshay Kumar",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Applications",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 19,
+    "Name of the Staff": "Ms. Nisha",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Applications",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 20,
+    "Name of the Staff": "Ms. Sumati",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Applications",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 21,
+    "Name of the Staff": "Ms. Shivani Anand",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Applications",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 22,
+    "Name of the Staff": "Ms. Daizy Sharma",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Applications",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 23,
+    "Name of the Staff": "Ms. Aarzoo Sharma ",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Applications",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 24,
+    "Name of the Staff": "Ms. Shabnam ",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Applications",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 25,
+    "Name of the Staff": "Ms. Chandani ",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Applications",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 26,
+    "Name of the Staff": "Dr. Pertik Garg",
+    "Designation/Position": "Professor ",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PhD"
+  },
+  {
+    "S. No.": 27,
+    "Name of the Staff": "Dr. Gurkarandesh Kaur Mangat",
+    "Designation/Position": "Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PhD"
+  },
+  {
+    "S. No.": 28,
+    "Name of the Staff": "Dr. Banita",
+    "Designation/Position": "Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PhD"
+  },
+  {
+    "S. No.": 29,
+    "Name of the Staff": "Dr. Indu Batra",
+    "Designation/Position": "Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PhD"
+  },
+  {
+    "S. No.": 30,
+    "Name of the Staff": "Dr. Vandana",
+    "Designation/Position": "Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PhD"
+  },
+  {
+    "S. No.": 31,
+    "Name of the Staff": "Dr. Meena Thakur",
+    "Designation/Position": "Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PhD"
+  },
+  {
+    "S. No.": 32,
+    "Name of the Staff": "Dr. Meenakshi Sharma ",
+    "Designation/Position": "Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PhD"
+  },
+  {
+    "S. No.": 33,
+    "Name of the Staff": "Mr. Navpreet Singh",
+    "Designation/Position": "Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "UG"
+  },
+  {
+    "S. No.": 34,
+    "Name of the Staff": "Mr. Varun Garg",
+    "Designation/Position": "Associate Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "UG"
+  },
+  {
+    "S. No.": 35,
+    "Name of the Staff": "Dr. Sandeep Ranjan ",
+    "Designation/Position": "Associate Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PhD"
+  },
+  {
+    "S. No.": 36,
+    "Name of the Staff": "Dr. Ekta Sharma",
+    "Designation/Position": "Associate Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PhD"
+  },
+  {
+    "S. No.": 37,
+    "Name of the Staff": "Dr. Hartipat Kaur",
+    "Designation/Position": "Associate Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PhD"
+  },
+  {
+    "S. No.": 38,
+    "Name of the Staff": "Mr. Harjinder Singh",
+    "Designation/Position": "Associate Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 39,
+    "Name of the Staff": "Mr. Sunil Kumar Soni",
+    "Designation/Position": "Associate Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 40,
+    "Name of the Staff": "Dr. Pooja Kumra",
+    "Designation/Position": "Associate Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PhD"
+  },
+  {
+    "S. No.": 41,
+    "Name of the Staff": "Dr. Meenu Rohilla",
+    "Designation/Position": "Associate Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PhD"
+  },
+  {
+    "S. No.": 42,
+    "Name of the Staff": "Ms. Priyanka Sood",
+    "Designation/Position": "Associate Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 43,
+    "Name of the Staff": "Mr. Jarnail Singh",
+    "Designation/Position": "Associate Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 44,
+    "Name of the Staff": "Mr. Chetan Jain ",
+    "Designation/Position": "Associate Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 45,
+    "Name of the Staff": "Mr. Jaswinder Kumar ",
+    "Designation/Position": "Associate Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 46,
+    "Name of the Staff": "Ms. Sushma Rani",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 47,
+    "Name of the Staff": "Ms. Meenakshi Sharma",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 48,
+    "Name of the Staff": "Ms. Anchal Goyal",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 49,
+    "Name of the Staff": "Ms. Asmita Singh",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 50,
+    "Name of the Staff": "Ms. Ramneet Kaur",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 51,
+    "Name of the Staff": "Ms. Pooja Verma",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 52,
+    "Name of the Staff": "Ms. Priyanka Sharma",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 53,
+    "Name of the Staff": "Mr. Paramveer Singh",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 54,
+    "Name of the Staff": "Mr. Sourav Singh ",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 55,
+    "Name of the Staff": "Mr. Gurwinder Singh ",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 56,
+    "Name of the Staff": "Ms. Ekta Mahajan",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 57,
+    "Name of the Staff": "Mr. Vivek Kumar",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 58,
+    "Name of the Staff": "Ms. Suvidha ",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 59,
+    "Name of the Staff": "Ms. Kulbir Kaur ",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 60,
+    "Name of the Staff": "Ms. Sapna Arora",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 61,
+    "Name of the Staff": "Ms. Ritika Mishra",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 62,
+    "Name of the Staff": "Mr. Manik Dhiman ",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 63,
+    "Name of the Staff": "Mr. Manish Kumar ",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 64,
+    "Name of the Staff": "Ms. Anil Kumar",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 65,
+    "Name of the Staff": "Ms. Rupinder Kaur",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 66,
+    "Name of the Staff": "Mr. Mukul ",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 67,
+    "Name of the Staff": "Ms. Manmeen Kaur",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 68,
+    "Name of the Staff": "Ms. Amarpreet Kaur",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 69,
+    "Name of the Staff": "Ms. Shilpa Sharma",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 70,
+    "Name of the Staff": "Ms. Heena",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 71,
+    "Name of the Staff": "Ms. Mandeep Kaur ",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 72,
+    "Name of the Staff": "Mr. Aasessdeep Singh",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 73,
+    "Name of the Staff": "Mrs. Jyoti Rani ",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 74,
+    "Name of the Staff": "Mr. Sagar Kumar ",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 75,
+    "Name of the Staff": "Ms. Komalpreet Kaur ",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 76,
+    "Name of the Staff": "Mr. Lalit Kumar ",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 77,
+    "Name of the Staff": "Mr. Yagesh Dogra ",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 78,
+    "Name of the Staff": "Mr. Akash Dixit ",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 79,
+    "Name of the Staff": "Ms. Tamanna Sharma ",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 80,
+    "Name of the Staff": "Mr. Sandeep Chauhan",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 81,
+    "Name of the Staff": "Mr. Sahil Garg",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Computer Science & Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 82,
+    "Name of the Staff": "Ms. Tripta Kumari",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Electrical Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 83,
+    "Name of the Staff": "Ms. Sapna ",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Electrical Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 84,
+    "Name of the Staff": "Mr. Inderjeet ",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Electrical Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 85,
+    "Name of the Staff": "Mr. Navneet Kumar",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Electrical Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 86,
+    "Name of the Staff": "Mr. Arun",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Electrical Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 87,
+    "Name of the Staff": "Ms. Harpreet Kaur ",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Electrical Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 88,
+    "Name of the Staff": "Dr. Ayusi Chauhan ",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Electrical Engineering",
+    "Qualification": "PhD"
+  },
+  {
+    "S. No.": 89,
+    "Name of the Staff": "Dr. Sudhakar Pandey",
+    "Designation/Position": "Professor",
+    "Department": "Electronics & Communication Engineering",
+    "Qualification": "PhD"
+  },
+  {
+    "S. No.": 90,
+    "Name of the Staff": "Dr. Shashi Jawla ",
+    "Designation/Position": "Associate Professor",
+    "Department": "Electronics & Communication Engineering",
+    "Qualification": "PhD"
+  },
+  {
+    "S. No.": 91,
+    "Name of the Staff": "Ms. Dally Verma ",
+    "Designation/Position": "Associate Professor",
+    "Department": "Electronics & Communication Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 92,
+    "Name of the Staff": "Ms. Roop shikha",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Electronics & Communication Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 93,
+    "Name of the Staff": "Ms. Harpreet Kaur Sodhi",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Electronics & Communication Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 94,
+    "Name of the Staff": "Ms. Jyoti Kalia",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Electronics & Communication Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 95,
+    "Name of the Staff": "Ms. Komal Dhiman ",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Electronics & Communication Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 96,
+    "Name of the Staff": "Mr. Harsimran Singh ",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Electronics & Communication Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 97,
+    "Name of the Staff": "Ms. Abha Sharma ",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Electronics & Communication Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 98,
+    "Name of the Staff": "Dr. Neeraj Kumar",
+    "Designation/Position": "Professor ",
+    "Department": "Master in Business Administration",
+    "Qualification": "PhD"
+  },
+  {
+    "S. No.": 99,
+    "Name of the Staff": "Dr. Manpreet Kaur",
+    "Designation/Position": "Associate Professor",
+    "Department": "Master in Business Administration",
+    "Qualification": "PhD"
+  },
+  {
+    "S. No.": 100,
+    "Name of the Staff": "Mr. Muzaffar Ganie",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Master in Business Administration",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 101,
+    "Name of the Staff": "Ms. Akshita Gupta ",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Master in Business Administration",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 102,
+    "Name of the Staff": "Ms. Ishu Saini ",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Master in Business Administration",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 103,
+    "Name of the Staff": "Ms. Nisha Chawla",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Master in Business Administration",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 104,
+    "Name of the Staff": "Ms. Chandrika Devi ",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Master in Business Administration",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 105,
+    "Name of the Staff": "Mr. Prabhjot Singh ",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Master in Business Administration",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 106,
+    "Name of the Staff": "Ms Navneet Kaur ",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Master in Business Administration",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 107,
+    "Name of the Staff": "Mr. Ankur Gupta",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Master in Business Administration",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 108,
+    "Name of the Staff": "Dr. Sanjeev Saini",
+    "Designation/Position": "Senior Professor",
+    "Department": "Mechanical Engineering",
+    "Qualification": "PhD"
+  },
+  {
+    "S. No.": 109,
+    "Name of the Staff": "Mr. Ankur Gill",
+    "Designation/Position": "Associate Professor",
+    "Department": "Mechanical Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 110,
+    "Name of the Staff": "Dr. Ravi Kant ",
+    "Designation/Position": "Associate Professor",
+    "Department": "Mechanical Engineering",
+    "Qualification": "PhD"
+  },
+  {
+    "S. No.": 111,
+    "Name of the Staff": "Mr. Ajay Rana ",
+    "Designation/Position": "Associate Professor",
+    "Department": "Mechanical Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 112,
+    "Name of the Staff": "Mr. Aashish Sharma",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Mechanical Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 113,
+    "Name of the Staff": "Ms. Navneet Kaur ",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Mechanical Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 114,
+    "Name of the Staff": "Ms. Harmanpreet Kaur ",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Mechanical Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 115,
+    "Name of the Staff": "Mr. Satvir Singh",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Mechanical Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 116,
+    "Name of the Staff": "Ms. Daljeet Kaur",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Mechanical Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 117,
+    "Name of the Staff": "Mr. Vikrant Choudhary ",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Mechanical Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 118,
+    "Name of the Staff": "Ms. Anjali Kansal ",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Mechanical Engineering",
+    "Qualification": "PG"
+  },
+  {
+    "S. No.": 119,
+    "Name of the Staff": "Ms Deepika Aggarwal ",
+    "Designation/Position": "Assistant Professor",
+    "Department": "Mechanical Engineering",
+    "Qualification": "PG"
+  }
+]

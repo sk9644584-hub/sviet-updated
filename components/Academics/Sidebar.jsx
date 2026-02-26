@@ -10,6 +10,7 @@ const Sidebar = ({ routeName, activeRoute = 0, departmentNameForNav }) => {
         { name: "Mission", href: "/academics/" + routeName + "#mission" },
         { name: "Programmes", href: "/Programmes/" + routeName },
         { name: "Syllabus", href: "/syllabus/" + routeName },
+        { name: "Faculty Members", href: "/faculty/" + routeName },
     ]
     const [activeIndex, setActiveIndex] = React.useState(activeRoute)
 
