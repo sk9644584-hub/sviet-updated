@@ -98,6 +98,16 @@ export const navItems = [
                             { name: "2023-24", href: "https://static.shubhampf.cloud/Documents/AnnualAccounts/balancesheet2023-24.pdf" },
                             { name: "2022-23", href: "https://static.shubhampf.cloud/Documents/AnnualAccounts/balancesheet2022-23.pdf" },
                         ]
+                    },
+                    {
+                        name: "Statutory Committees",
+                        href: "#",
+                        subLinks: [
+                            { name: "Student Grievances Redressal Committee", href: "https://static.shubhampf.cloud/Committees/StudentGrievancesRedressalCommittee.pdf" },
+                            { name: "SC,ST & OBC Committe", href: "https://static.shubhampf.cloud/Committees/SCSTOBCCommitte.pdf" },
+                            { name: "Internal Complaint Committee", href: "https://static.shubhampf.cloud/Committees/InternalComplaintCommittee.pdf" },
+                            { name: "Anti Ragging Committee", href: "http://static.shubhampf.cloud/Committees/AntiRaggingCommittee.pdf" },
+                        ]
                     }
                 ],
             }
