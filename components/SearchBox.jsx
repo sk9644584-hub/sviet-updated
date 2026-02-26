@@ -1,17 +1,8 @@
 "use client"
 
 import * as React from "react"
-import { Search } from "lucide-react"
+import { Search, X } from "lucide-react"
 import Fuse from "fuse.js"
-import {
-    CommandDialog,
-    CommandEmpty,
-    CommandGroup,
-    CommandInput,
-    CommandItem,
-    CommandList,
-    CommandSeparator,
-} from "@/components/ui/command"
 import { useRouter } from "next/navigation"
 import { navItems } from "./Home/MainNav/NavItems"
 import { getGlobalSearchData } from "@/app/actions/searchData"
@@ -86,14 +77,6 @@ export function SearchBox() {
     const router = useRouter()
 
     React.useEffect(() => {
-        const down = (e) => {
-            if (e.key === "k" && (e.metaKey || e.ctrlKey)) {
-                e.preventDefault()
-                setOpen((open) => !open)
-            }
-        }
-        document.addEventListener("keydown", down)
-
         // Fetch Dynamic Content via Server Action
         async function fetchDynamicData() {
             try {
@@ -107,8 +90,6 @@ export function SearchBox() {
         }
 
         fetchDynamicData()
-
-        return () => document.removeEventListener("keydown", down)
     }, [])
 
     const runCommand = React.useCallback((command) => {
@@ -187,51 +168,76 @@ export function SearchBox() {
         <>
             <button
                 onClick={() => setOpen(true)}
-                className="hidden md:flex items-center gap-2 px-3 py-2 text-sm text-gray-500 bg-gray-50 hover:bg-gray-100 rounded-md border shadow-sm transition-colors w-full max-w-[200px]"
+                className="hidden md:flex items-center gap-2 px-3 py-2 text-sm text-gray-500 bg-gray-50 hover:bg-gray-100 rounded-md border shadow-sm transition-colors w-[150px] lg:w-[150px]"
             >
                 <Search className="h-4 w-4" />
                 <span>Search...</span>
-                <kbd className="ml-auto pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-white px-1.5 font-mono text-[10px] font-medium text-gray-500 opacity-100">
-                    <span className="text-xs">⌘</span>K
-                </kbd>
             </button>
 
-            {/* shouldFilter={false} enables us to override cmdk's native filter and use fuse.js results directly */}
-            <CommandDialog open={open} onOpenChange={setOpen} shouldFilter={false}>
-                <CommandInput
-                    placeholder="Search for courses (e.g., BCA Syllabus), committees, or pages..."
-                    value={searchQuery}
-                    onValueChange={setSearchQuery}
-                />
-                <CommandList className="max-h-[350px] overflow-y-auto">
-                    {filteredItems.length === 0 && <CommandEmpty>No results found for "{searchQuery}".</CommandEmpty>}
+            {open && (
+                <div
+                    className="fixed inset-0 z-[100] flex items-start justify-center pt-[15vh] bg-black/50 backdrop-blur-sm"
+                    onClick={() => setOpen(false)}
+                >
+                    <div
+                        className="relative w-full max-w-2xl bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-100 mx-4"
+                        onClick={(e) => e.stopPropagation()}
+                    >
+                        <div className="flex items-center px-4 py-3 border-b">
+                            <Search className="h-5 w-5 text-gray-400 mr-3 hidden sm:block" />
+                            <input
+                                autoFocus
+                                className="flex-1 bg-transparent outline-none border-none text-base text-gray-900 placeholder-gray-400"
+                                placeholder="Search for courses (e.g., BCA Syllabus), committees, or pages..."
+                                value={searchQuery}
+                                onChange={(e) => setSearchQuery(e.target.value)}
+                            />
+                            <button onClick={() => setOpen(false)} className="p-1 hover:bg-gray-100 rounded-md transition-colors ml-2">
+                                <X className="h-5 w-5 text-gray-500" />
+                            </button>
+                        </div>
 
-                    <CommandGroup heading={searchQuery ? "Search Results" : "Suggested Pages"}>
-                        {filteredItems.map((item, itemIdx) => (
-                            <CommandItem
-                                key={itemIdx}
-                                value={item.name + item.href}
-                                className="cursor-pointer font-medium text-gray-700 hover:bg-gray-50"
-                                onSelect={() => runCommand(() => {
-                                    const isExternal = item.href.startsWith("http")
-                                    if (isExternal) {
-                                        window.open(item.href, "_blank")
-                                    } else {
-                                        router.push(item.href)
-                                    }
-                                })}
-                            >
-                                {highlightText(item.name, searchQuery)}
-                                {item.group && (
-                                    <span className="ml-auto text-xs text-gray-400 font-normal bg-gray-100 px-2 py-0.5 rounded-full">
-                                        {item.group}
-                                    </span>
-                                )}
-                            </CommandItem>
-                        ))}
-                    </CommandGroup>
-                </CommandList>
-            </CommandDialog>
+                        <div className="max-h-[60vh] overflow-y-auto p-2">
+                            {filteredItems.length === 0 ? (
+                                <div className="p-6 text-center text-gray-500 text-sm">
+                                    No results found for "{searchQuery}".
+                                </div>
+                            ) : (
+                                <div>
+                                    <div className="px-3 py-2 text-xs font-semibold text-gray-500 uppercase tracking-wider">
+                                        {searchQuery ? "Search Results" : "Suggested Pages"}
+                                    </div>
+                                    <div className="mt-1 space-y-1">
+                                        {filteredItems.map((item, itemIdx) => (
+                                            <button
+                                                key={itemIdx}
+                                                onClick={() => runCommand(() => {
+                                                    const isExternal = item.href.startsWith("http")
+                                                    if (isExternal) {
+                                                        window.open(item.href, "_blank")
+                                                    } else {
+                                                        router.push(item.href)
+                                                    }
+                                                })}
+                                                className="w-full flex items-center text-left px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 rounded-md select-none outline-none focus:bg-gray-100 transition-colors"
+                                            >
+                                                <div className="flex-1 truncate">
+                                                    {highlightText(item.name, searchQuery)}
+                                                </div>
+                                                {item.group && (
+                                                    <span className="ml-3 text-[10px] text-gray-400 font-normal bg-gray-50 px-2 py-0.5 rounded-full border shrink-0">
+                                                        {item.group}
+                                                    </span>
+                                                )}
+                                            </button>
+                                        ))}
+                                    </div>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+                </div>
+            )}
         </>
     )
 }

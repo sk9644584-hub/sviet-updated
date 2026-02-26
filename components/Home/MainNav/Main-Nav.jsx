@@ -15,6 +15,7 @@ import {
     AccordionTrigger
 } from "@/components/ui/accordion"
 import { navItems } from "./NavItems"
+import { SearchBox } from "@/components/SearchBox"
 
 export function MainNav() {
     const [activeDropdown, setActiveDropdown] = useState(null)
@@ -120,6 +121,9 @@ export function MainNav() {
                             )}
                         </li>
                     ))}
+                    <li className="ml-2 flex items-center pr-4">
+                        <SearchBox />
+                    </li>
                 </ul>
 
 

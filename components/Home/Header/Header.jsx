@@ -10,7 +10,6 @@ import {
     AccordionItem,
     AccordionTrigger
 } from "@/components/ui/accordion"
-import { SearchBox } from "@/components/SearchBox"
 
 
 import { navItems } from "../MainNav/NavItems"
@@ -85,10 +84,6 @@ export function Header() {
                             width={100}
                             height={100}
                         />
-
-                        <div className="hidden md:block">
-                            <SearchBox />
-                        </div>
                     </div>
                 </div>
 

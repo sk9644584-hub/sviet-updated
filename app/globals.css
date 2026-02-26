@@ -3,6 +3,7 @@
 
 * {
   font-family: "Poppins", sans-serif;
+  scroll-behavior: "smooth";
 }
 
 img,
@@ -13,10 +14,12 @@ video {
   -webkit-optimize-contrast: none;
   image-rendering: smooth;
 }
+
 img {
   image-rendering: auto;
   transform: translateZ(0);
 }
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
