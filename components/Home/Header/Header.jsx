@@ -11,6 +11,7 @@ import {
     AccordionTrigger
 } from "@/components/ui/accordion"
 
+
 import { navItems } from "../MainNav/NavItems"
 export function Header() {
     return (
