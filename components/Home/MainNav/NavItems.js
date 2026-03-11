@@ -112,6 +112,10 @@ export const navItems = [
                     {
                         name: "Institutional Development Plan",
                         href: "https://static.shubhampf.cloud/Documents/InstitutionalDevelopmentPlan.pdf"
+                    },
+                    {
+                        name: "Swami Vivekanand Institute of Engineering and Technology",
+                        href: "https://static.shubhampf.cloud/SwamVivekanandInstituteofEngineeringandTechnology.pdf"
                     }
                 ],
             }
