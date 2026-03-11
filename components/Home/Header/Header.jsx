@@ -39,7 +39,7 @@ export function Header() {
                                 </h2>
                                 <p className="text-xs text-gray-600">
 
-                                    ਸਥਾਪਿਤ 2004 | AICTE ਵੱਲੋਂ ਮਨਜ਼ੂਰਸ਼ੁਦਾ | IKGPTU ਨਾਲ ਸੰਬੰਧਤ
+                                    ਸਥਾਪਿਤ 2004 | ਸਵੈ-ਸ਼ਾਸਿਤ ਸੰਸਥਾ | AICTE ਵੱਲੋਂ ਮਨਜ਼ੂਰਸ਼ੁਦਾ | IKGPTU ਨਾਲ ਸੰਬੰਧਤ
                                 </p>
 
                                 {/* English Title */}
@@ -47,7 +47,7 @@ export function Header() {
                                     Swami Vivekanand Institute of Engineering & Technology
                                 </h2>
                                 <p className="text-xs text-gray-600">
-                                    ESTD. 2004 | Approved by AICTE | Affiliated to IKGPTU
+                                    ESTD. 2004 | Autonomous Institute | Approved by AICTE | Affiliated with IKGPTU
                                 </p>
                             </div>
                         </div>
