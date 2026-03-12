@@ -79,7 +79,7 @@ export const navItems = [
                         href: "/Affiliation-from-University"
                     },
                     { name: "AICTE Approvals", href: "/AICTE" },
-                    { name: "Autonomous", href: "/" },
+                    { name: "Autonomous", href: "https://static.shubhampf.cloud/SwamVivekanandInstituteofEngineeringandTechnology.pdf" },
                     {
                         name: "Ph.D. Course Work Approval (IKGPTU)",
                         href: "https://static.shubhampf.cloud/2298-2303-Conduct-of-Course-work-of-IKGPTU-Ph.D-Students-in-NAAC-NBA-accredited-affiliated-colleges.pdf"
@@ -113,10 +113,7 @@ export const navItems = [
                         name: "Institutional Development Plan",
                         href: "https://static.shubhampf.cloud/Documents/InstitutionalDevelopmentPlan.pdf"
                     },
-                    {
-                        name: "Swami Vivekanand Institute of Engineering and Technology",
-                        href: "https://static.shubhampf.cloud/SwamVivekanandInstituteofEngineeringandTechnology.pdf"
-                    }
+
                 ],
             }
         ]
