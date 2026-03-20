@@ -52,9 +52,9 @@ const page = () => {
     return (
         <>
             <Academicslayout
-                teacherPic='https://static.shubhampf.cloud/teachers/cse.jpeg'
-                teacherName='Dr. Vandana'
-                Designation='Head'
+                teacherPic='https://static.shubhampf.cloud/teachers/DrArunKumar.jpeg'
+                teacherName='Dr. Arun Kumar'
+                Designation='Dean'
                 Department='Department of Computer Science & Engineering'
                 aboutDepartment={about}
                 departmentProfile={profile}
