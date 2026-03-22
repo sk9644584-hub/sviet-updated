@@ -242,7 +242,11 @@ export function ContactUsPage() {
 
         try {
             const BACKEND_URL = "/enquiry";
-            await axiosInstance.post(BACKEND_URL, form)
+            const courseLabel = courseOptions.find(c => c.value === form.course)?.label || form.course
+            const programLabel = form.course && programOptions[form.course]
+                ? programOptions[form.course].find(p => p.value === form.program)?.label || form.program
+                : form.program
+            await axiosInstance.post(BACKEND_URL, { ...form, course: courseLabel, program: programLabel })
 
             alert("Enquiry submitted successfully!")
 
@@ -316,6 +320,7 @@ export function ContactUsPage() {
                                         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
                                             <Input
                                                 name="name"
+                                                value={form.name}
                                                 onChange={handleChange}
                                                 placeholder="Enter Your Name"
                                                 className="border-gray-300"
@@ -352,6 +357,7 @@ export function ContactUsPage() {
                                             </div>
                                             <Input
                                                 name="city"
+                                                value={form.city}
                                                 onChange={handleChange}
                                                 placeholder="Enter Your district/state/address"
                                                 className="border-gray-300"
