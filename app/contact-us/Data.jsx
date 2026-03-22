@@ -57,6 +57,8 @@ function filterNumberInput(value, allowPlus = false, allowDash = false) {
                 lastWasDash = true
             }
         } else if (/\d/.test(c) && digitCount < 10) {
+            // First digit must be 6, 7, 8, or 9 (Indian mobile number)
+            if (digitCount === 0 && !/[6-9]/.test(c)) continue
             filtered += c
             digitCount++
             lastWasDash = false
@@ -90,6 +92,8 @@ function validatePhone(phone) {
     if (!/^\d+$/.test(digits)) return false
     // Digits must be exactly 10
     if (digits.length !== 10) return false
+    // First digit must be 6, 7, 8, or 9 (Indian mobile number)
+    if (!/^[6-9]/.test(digits)) return false
     return true
 }
 
