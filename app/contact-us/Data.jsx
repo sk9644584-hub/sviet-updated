@@ -242,14 +242,15 @@ export function ContactUsPage() {
 
         try {
             const BACKEND_URL = "/enquiry";
-            await axiosInstance.post(BACKEND_URL,form)
+            await axiosInstance.post(BACKEND_URL, form)
 
             alert("Enquiry submitted successfully!")
 
             setForm({ name: "", email: "", phone: "", city: "", course: "", program: "" })
         } catch (error) {
             console.error("Submission error:", error)
-            alert("Something went wrong. Please try again.")
+            let err = error.response.data.message || "Something went wrong. Please try again."
+            alert(err)
         } finally {
             setLoading(false)
         }
