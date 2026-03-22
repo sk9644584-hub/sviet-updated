@@ -138,7 +138,8 @@ export function ContactUsPage() {
         { value: "btech", label: "B.Tech" },
         { value: "mtech", label: "M.Tech" },
         { value: "mba", label: "MBA" },
-        { value: "mca", label: "MCA" }
+        { value: "mca", label: "MCA" },
+        { value: "bca", label: "BCA" }
     ]
 
     const programOptions = {
@@ -162,6 +163,9 @@ export function ContactUsPage() {
         ],
         mca: [
             { value: "mca", label: "Master of Computer Application (MCA)" }
+        ],
+        bca: [
+            { value: "bca", label: "Bachelor of Computer Application (BCA)" }
         ]
     }
 
