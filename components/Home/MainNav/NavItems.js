@@ -119,6 +119,7 @@ export const navItems = [
         ]
     },
     { name: "HR MANUAL", href: "https://static.shubhampf.cloud/HR-Manual.pdf", dropdown: [] },
+    { name: "Examination", href: "#", dropdown: [] },
     { name: "CONTACT US", href: "/contact-us", dropdown: [] },
     { name: "Gallery", href: "/CollegeGallery", dropdown: [] },
 
