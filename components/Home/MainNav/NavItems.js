@@ -129,6 +129,16 @@ export const navItems = [
             }
         ]
     },
+    {
+        name: "NIRF", href: "",
+        dropdown: [
+            {
+                links: [
+                    { name: "NIRF 2026", href: "https://static.shubhampf.cloud/SwamiVivekanandInstituteofEnggTechnologyRamnagar20260129.pdf" },
+                ]
+            }
+        ]
+    },
     { name: "CONTACT US", href: "/contact-us", dropdown: [] },
     { name: "Gallery", href: "/CollegeGallery", dropdown: [] },
 
