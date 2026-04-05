@@ -23,10 +23,10 @@ export function MainNav() {
 
 
     return (
-        <nav className="bg-[#007bff] md:px-10 lg:px-0     md:py-3 text-white">
-            <div className=" mx-auto  flex items-center justify-between  ">
+        <nav className="bg-[#007bff] md:px-2 lg:px-0 md:py-0 text-white">
+            <div className="mx-auto flex items-center justify-between">
                 {/* Desktop Navigation */}
-                <ul className="hidden  flex-wrap justify-center  gap-x-0 gap-y-2 text-xs font-medium md:flex  w-full">
+                <ul className="hidden justify-center gap-x-0 text-[10px] lg:text-xs font-medium md:flex md:flex-nowrap w-full overflow-x-auto nav-scroll">
                     {navItems.map(item => (
                         <li
                             onMouseEnter={() => setActiveDropdown(item.name)}
@@ -43,7 +43,7 @@ export function MainNav() {
                                 >
                                     <DropdownMenuTrigger asChild>
                                         <span
-                                            className={`cursor-pointerz lg:px-2 md:px-5 px-1 py-3 whitespace-nowrap   block transition-colors duration-200 uppercase
+                                            className={`cursor-pointer xl:px-2 lg:px-1.5 md:px-1 py-4 whitespace-nowrap block transition-colors duration-200 uppercase
                         ${activeDropdown === item.name
                                                     ? "bg-white text-[#007bff]"
                                                     : "hover:bg-white hover:text-[#007bff]"
@@ -114,14 +114,14 @@ export function MainNav() {
                             ) : (
                                 <Link
                                     href={item.href}
-                                    className={`whitespace-nowrap xl:px-3 md:px-5 lg:px-2 px-1 py-3 block transition-colors duration-200 hover:bg-white uppercase hover:text-[#007bff]`}
+                                    className={`whitespace-nowrap xl:px-2 lg:px-1.5 md:px-1 py-4 block transition-colors duration-200 hover:bg-white uppercase hover:text-[#007bff]`}
                                 >
                                     {item.name}
                                 </Link>
                             )}
                         </li>
                     ))}
-                    <li className="ml-2 flex items-center pr-4">
+                    <li className="ml-1 flex items-center pr-2 shrink-0">
                         <SearchBox />
                     </li>
                 </ul>
