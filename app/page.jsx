@@ -1,8 +1,7 @@
 import { StudentTestimonials } from "@/components/Admissions";
 import { BoardOfManagement, CollegeOverview, CurrentInitiative, DistinguishedLeaders, HeroSection, Highlights, NewsEvents, Recruter, } from "@/components/Home";
-import axiosInstance from "@/lib/axiosInstance";
+import { fetchPublicHomeData } from "@/lib/fetchData";
 const keyHighlights = [
-
   {
     title: "Diverse Academic Portfolio",
     description:
@@ -93,27 +92,7 @@ export const testimonials = [
 
 ]
 export default async function HomePage() {
-  let images = [];
-  let news = [];
-  let notifications = [];
-  let coes = []
-  try {
-    const imagesRes = await axiosInstance.get('/hero-images');
-    images = imagesRes.data;
-
-    const newsRes = await axiosInstance.get("/news");
-    news = newsRes.data
-
-    const notificationsRes = await axiosInstance.get("/notifications");
-    notifications = notificationsRes.data;
-
-    const coesRes = await axiosInstance.get("/coes");
-    coes = coesRes.data;
-
-
-  } catch (error) {
-    console.error("Error fetching data:", error);
-  }
+  const { heroImages: images = [], news = [], notifications = [], coes = [] } = await fetchPublicHomeData();
 
   const managementTeam = [
     {

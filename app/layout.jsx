@@ -3,7 +3,7 @@ import 'whatwg-fetch';
 import "./globals.css";
 import ConditionalLayout from '@/components/ConditionalLayout'
 import ScrollToNavbarButton from "@/components/ScrollToNavbarButton";
-import axiosInstance from "@/lib/axiosInstance";
+import { fetchPublicHomeData } from "@/lib/fetchData";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,13 +23,7 @@ export const metadata = {
 };
 
 export default async function RootLayout({ children }) {
-  let topBanners = [];
-  try {
-    const response = await axiosInstance.get('/top-banners');
-    topBanners = response.data;
-  } catch (error) {
-    console.error("Error fetching data:", error);
-  }
+  const { topBanners } = await fetchPublicHomeData();
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
