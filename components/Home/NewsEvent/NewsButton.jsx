@@ -9,7 +9,7 @@ const NewsButton = ({ button }) => {
                 window.open(button.link, "_blank")
             }}
 
-            variant={button.variant} size="sm" className="text-xs text-blue-400 hover:text-blue-500 border-blue-400 cursor-pointer"
+            variant={"outline"} size="sm" className="text-xs text-blue-400 hover:text-blue-500 border-blue-400 cursor-pointer"
         >
             {button.text}
 
