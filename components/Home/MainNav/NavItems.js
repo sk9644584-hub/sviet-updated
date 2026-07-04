@@ -91,6 +91,9 @@ export const navItems = [
                         href: "https://static.shubhampf.cloud/2FRecognitionLetter591-2025.pdf"
                     },
                     {
+                       name: "IKGPTU Course Merger Notification",
+                       href:"https://static.shubhampf.cloud/Notification.pdf"},
+                    {
                         name: "Annual Accounts",
                         href: "#",
                         subLinks: [
