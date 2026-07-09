@@ -176,7 +176,7 @@ function FacultyLayout({ routeName, departmentNameForNav, programmes = [] }) {
                         </div>
 
                         {/* Right Sidebar */}
-                        <Sidebar activeRoute={4} routeName={routeName} departmentNameForNav={departmentNameForNav} />
+                        <Sidebar activeRoute={6} routeName={routeName} departmentNameForNav={departmentNameForNav} />
                     </div>
                 </div>
             </main>

@@ -29,8 +29,7 @@ const page = () => {
                         </div>
 
                         {/* Left Sidebar - Navigation */}
-                        <Sidebar activeRoute={3} />
-                    </div>
+                        <Sidebar />                    </div>
                 </div>
             </main>
 

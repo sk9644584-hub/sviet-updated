@@ -93,8 +93,7 @@ A problem encourages creative efforts to meet the need. Where everyone else is k
                         </div>
 
                         {/* Right Sidebar - keep existing sidebar code */}
-                        <Sidebar activeRoute={2} />
-                    </div>
+                        <Sidebar />                    </div>
                 </div>
             </main>
         </div>

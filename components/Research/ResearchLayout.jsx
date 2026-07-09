@@ -48,7 +48,7 @@ function ResearchLayout({
                                 </div>
                                 {/* Research & Development Committee */}
                                 <div
-                                    id="Research"
+                                    id="research"
                                     className="p-6 border-b border-gray-200"
                                 >
                                     <h2 className="text-xl font-bold text-[#003366] mb-4">

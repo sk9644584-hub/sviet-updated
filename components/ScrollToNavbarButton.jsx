@@ -40,7 +40,7 @@ export default function ScrollToNavbarButton() {
             onClick={handleClick}
             aria-label="Go to top navigation"
             title="Go to top"
-            className="fixed right-4 bottom-6 z-50 rounded-full bg-[#003366] p-0 text-white shadow-lg hover:bg-[#002244] focus:outline-none"
+            className="fixed right-4 bottom-6 z-50 rounded-full bg-[#003366] p-0 text-white shadow-lg cursor-pointer hover:bg-[#002244] focus:outline-none"
             style={{ width: size, height: size }}
         >
             <svg width={size} height={size} className="block">

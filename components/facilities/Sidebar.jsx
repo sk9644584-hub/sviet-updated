@@ -47,8 +47,8 @@ const Sidebar = ({ departmentNameForNav, slug }) => {
         sideBarData.findIndex((data) => data.slug === slug)
     );
     return (
-        <div className="lg:col-span-1">
-            <div className="bg-gray-100 rounded-lg shadow-sm p-4">
+        <div className="lg:col-span-1 lg:self-start lg:sticky lg:top-6">
+            <div className="bg-gray-100 rounded-lg shadow-sm p-4 max-h-[calc(100vh-4.5rem)] overflow-y-auto">
                 <h3 className="text-base text-center font-semibold text-[#003366] mb-4 border-b pb-2">
                     {departmentNameForNav}
                 </h3>
