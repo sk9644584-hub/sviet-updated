@@ -26,6 +26,11 @@ const staticPages = [
     { name: "BBA / MBA / B.Com Programmes", href: "/Programmes/Business-Administration", keywords: "bba, mba, bcom, business administration, commerce, programmes, courses" },
     { name: "Business Administration Faculty", href: "/faculty/Business-Administration", keywords: "bba, mba, bcom, business administration, commerce, faculty, staff, teachers, hod" },
 
+    // Hotel management (BHMCT / B.Voc / B.Sc Nutrition & Dietetics)
+    { name: "Hotel Management (BHMCT / B.Voc / B.Sc Nutrition / MHMCT)", href: "/academics/Hotel-Management", keywords: "bhmct, hotel management, hospitality, catering technology, bvoc, b.sc nutrition, dietetics, mhmct, academics" },
+    { name: "Hotel Management Syllabus", href: "/syllabus/Hotel-Management", keywords: "bhmct, hotel management, hospitality, catering, bvoc, nutrition, dietetics, mhmct, syllabus, subjects" },
+    { name: "Hotel Management Programmes", href: "/Programmes/Hotel-Management", keywords: "bhmct, hotel management, hospitality, catering, bvoc, nutrition, dietetics, mhmct, programmes, courses" },
+    
     // ECE
     { name: "B.Tech Electronics & Communication", href: "/academics/Electronics-And-Communication-Engineering", keywords: "ece, electronics, communication, engineering, btech, academics" },
     { name: "ECE Syllabus", href: "/syllabus/Electronics-And-Communication-Engineering", keywords: "ece, electronics, communication, btech, syllabus, subjects" },

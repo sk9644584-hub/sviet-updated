@@ -32,6 +32,7 @@ export const navItems = [
                     { name: "CIVIL ENGINEERING", href: "/academics/Civil-Engineering" },
                     { name: "COMPUTER APPLICATIONS", href: "/academics/Computer-Applications" },
                     { name: "BUSINESS ADMINISTRATION", href: "/academics/Business-Administration" },
+                    { name: "HOTEL MANAGEMENT", href: "/academics/Hotel-Management" },
                 ]
             },
         ]
