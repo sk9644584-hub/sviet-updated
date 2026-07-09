@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import React from 'react'
 
-const Sidebar = ({ routeName, activeRoute = 0, departmentNameForNav }) => {
+const Sidebar = ({ showFaculty = true, routeName, activeRoute = 0, departmentNameForNav }) => {
     const sidebarLinks = [
         { name: "About Department", href: "/academics/" + routeName + "#about-department", },
         { name: "Department Profile", href: "/academics/" + routeName + "#department-profile" },
@@ -21,8 +21,11 @@ const Sidebar = ({ routeName, activeRoute = 0, departmentNameForNav }) => {
                     {departmentNameForNav}
                 </h3>
                 <nav className="space-y-1">
-                    {sidebarLinks.map((link, index) => (
-                        <Link
+                    {sidebarLinks.map((link, index) => {
+                        if (link.name === "Faculty Members" && !showFaculty) {
+                            return null; // Skip rendering this link if showFaculty is false
+                        }
+                        return (<Link
                             key={index}
                             href={link.href}
                             onClick={() => setActiveIndex(index)}
@@ -32,8 +35,8 @@ const Sidebar = ({ routeName, activeRoute = 0, departmentNameForNav }) => {
                                 }`}
                         >
                             {link.name}
-                        </Link>
-                    ))}
+                        </Link>)
+                    })}
                 </nav>
             </div>
         </div>
