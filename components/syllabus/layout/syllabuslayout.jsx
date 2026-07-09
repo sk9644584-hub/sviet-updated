@@ -5,7 +5,7 @@ import Link from "next/link"
 import { Download } from 'lucide-react'
 import { Sidebar } from "@/components/Academics/Sidebar"
 
-export function SyllabusLayout({ departmentNameForNav, routeName, resultsData }) {
+export function SyllabusLayout({ showFaculty, departmentNameForNav, routeName, resultsData }) {
 
 
 
@@ -69,7 +69,7 @@ export function SyllabusLayout({ departmentNameForNav, routeName, resultsData })
                             </div>
                         </div>
 
-                        <Sidebar activeRoute={5} departmentNameForNav={departmentNameForNav} routeName={routeName} />
+                        <Sidebar showFaculty={showFaculty} activeRoute={5} departmentNameForNav={departmentNameForNav} routeName={routeName} />
                     </div>
                 </div>
             </main>

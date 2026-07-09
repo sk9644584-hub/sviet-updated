@@ -26,7 +26,7 @@ const resultsData = [
     },
     {
         title: "Post Graduation",
-        courseName: "Bachelor of Science in Nutrition & Dietetics",
+        courseName: "Master of Hotel Management & Catering Technology",
         results: [
             { id: 1, description: "PG Syllabus 2018", downloadUrl: "https://static.shubhampf.cloud/syllabus/Hotel-Mngmnt/Syllabus/MHMCT%20Batch%202018.pdf" },
             { id: 2, description: "PG Syllabus 2013", downloadUrl: "https://static.shubhampf.cloud/syllabus/Hotel-Mngmnt/Syllabus/MHMCT%20Batch%202013.pdf" },
@@ -39,6 +39,7 @@ const resultsData = [
 const page = () => {
     return (
         <SyllabusLayout
+            showFaculty={false}
             resultsData={resultsData}
             departmentNameForNav={"Hotel Management"}
             routeName={"Hotel-Management"}

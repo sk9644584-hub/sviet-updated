@@ -3,7 +3,9 @@
 
 * {
   font-family: "Poppins", sans-serif;
-  scroll-behavior: "smooth";
+}
+html {
+  scroll-behavior: smooth;
 }
 
 img,
@@ -163,16 +165,20 @@ img {
 .nav-scroll::-webkit-scrollbar {
   height: 3px;
 }
+
 .nav-scroll::-webkit-scrollbar-track {
   background: transparent;
 }
+
 .nav-scroll::-webkit-scrollbar-thumb {
   background: rgba(255, 255, 255, 0.35);
   border-radius: 999px;
 }
+
 .nav-scroll::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.6);
 }
+
 .nav-scroll {
   scrollbar-width: thin;
   scrollbar-color: rgba(255, 255, 255, 0.35) transparent;

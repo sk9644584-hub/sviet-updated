@@ -27,8 +27,9 @@ const page = () => {
     return (
         <>
             <Academicslayout
+                showFaculty={false}
                 teacherPic='https://static.shubhampf.cloud/teachers/HotelMngmnt.png'
-                teacherName='Dr. (Chef) RichaVerma'
+                teacherName='Dr. (Chef) Richa Verma'
                 Designation='Head'
                 Department='Department of Hotel Management'
                 aboutDepartment={about}

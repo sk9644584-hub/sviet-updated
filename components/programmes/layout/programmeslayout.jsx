@@ -7,7 +7,7 @@ import {
     AccordionTrigger
 } from "@/components/ui/accordion"
 
-function Programmeslayout({ routeName, departmentNameForNav, programmes }) {
+function Programmeslayout({showFaculty, routeName, departmentNameForNav, programmes }) {
 
     return (
         <div className="flex min-h-screen flex-col">
@@ -140,7 +140,7 @@ function Programmeslayout({ routeName, departmentNameForNav, programmes }) {
                         </div>
 
                         {/* Right Sidebar */}
-                        <Sidebar activeRoute={4} routeName={routeName} departmentNameForNav={departmentNameForNav} />
+                        <Sidebar showFaculty={showFaculty} activeRoute={4} routeName={routeName} departmentNameForNav={departmentNameForNav} />
                     </div>
                 </div>
             </main>

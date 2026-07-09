@@ -139,6 +139,7 @@ const programmes = [
 const page = () => {
     return (
         <Programmeslayout
+            showFaculty={false}
             programmes={programmes}
             departmentNameForNav={"Hotel Management"}
             routeName={"Hotel-Management"}

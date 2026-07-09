@@ -13,6 +13,7 @@ function Academicslayout({
     mission,
     departmentNameForNav,
     routeName,
+    showFaculty
 }) {
 
 
@@ -122,7 +123,7 @@ function Academicslayout({
                         </div>
 
                         {/* Left Sidebar - Navigation */}
-                        <Sidebar departmentNameForNav={departmentNameForNav} routeName={routeName} />
+                        <Sidebar showFaculty={showFaculty} departmentNameForNav={departmentNameForNav} routeName={routeName} />
                     </div>
                 </div>
             </main>
