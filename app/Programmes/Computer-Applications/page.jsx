@@ -38,6 +38,41 @@ const programmes = [
 
 
     },
+    {
+        title: "Post Graduation Diploma",
+        data: {
+            courseName: "Post Graduate Diploma in Computer Application",
+            level: "PGD (Intake: 30)",
+            "Year of Approval": "2015",
+
+        },
+        pos: [
+            "<strong>PO1:</strong> Fundamental Knowledge: Develop a strong foundation in Computer Science and Information Technology to understand, design, and develop software solutions for real-world applications.",
+            "<strong>PO2:</strong> Critical Thinking and Problem Solving: Analyze problems logically, think critically, and apply appropriate computing techniques to develop effective and innovative solutions.",
+            "<strong>PO3:</strong> Emerging Technologies: Gain knowledge of the latest technologies, tools, and industry trends to adapt to the rapidly changing IT environment.",
+            "<strong>PO4:</strong> Modern Tools and Technologies: Use modern programming languages, software tools, databases, and development platforms to build efficient and reliable applications.",
+            "<strong>PO5:</strong> Project Planning and Management: Plan, design, implement, and manage software projects by applying project management principles, documentation, and quality standards.",
+            "<strong>PO6:</strong> Practical and Industry-Oriented Skills: Develop hands-on experience through laboratory work, case studies, and real-world projects to improve technical competence and employability.",
+            "<strong>PO7:</strong> Teamwork, Leadership, and Professional Ethics: Work effectively as an individual or team member, demonstrate leadership qualities, communicate professionally, and follow ethical practices in the IT profession."
+        ],
+
+        peos: [
+            "<strong>PEO1:</strong> Professional Knowledge: Apply fundamental knowledge of Computer Applications, Information Technology, and programming to develop effective software solutions for real-world problems.",
+            "<strong>PEO2:</strong> Technical Competence: Use modern computing tools, programming languages, databases, and software development techniques to design, develop, and maintain IT applications.",
+            "<strong>PEO3:</strong> Career Development and Lifelong Learning: Pursue successful careers, higher education, professional certifications, and continuously upgrade skills to meet the demands of emerging technologies.",
+            "<strong>PEO4:</strong> Innovation and Problem Solving: Analyze complex computing problems, think critically, and develop innovative, efficient, and sustainable technology-based solutions.",
+            "<strong>PEO5:</strong> Professional Ethics and Social Responsibility: Demonstrate ethical values, effective communication, teamwork, leadership, and social responsibility while working in diverse professional environments."
+        ],
+
+        psos: [
+            "<strong>PSO1:</strong> Software Development and Programming Skills: Apply programming concepts, algorithms, and software development methodologies to design, develop, test, and maintain efficient software applications using modern programming languages and development tools.",
+            "<strong>PSO2:</strong> Database and Web Technologies: Design, implement, and manage database systems and develop dynamic web-based applications using appropriate database management systems, web technologies, and frameworks.",
+            "<strong>PSO3:</strong> Emerging Computing Technologies and Professional Competence: Utilize current computing technologies, networking concepts, cloud services, cyber security practices, and emerging IT tools to solve real-world problems while demonstrating professional ethics, teamwork, communication, and lifelong learning."
+        ]
+
+
+    },
+
 ]
 const page = () => {
     return (

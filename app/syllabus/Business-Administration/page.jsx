@@ -5,7 +5,7 @@ const resultsData = [
 
     {
         title: "Post Graduation",
-        courseName: "",
+        courseName: "Master of Business Administration",
         results: [
             { id: 1, description: "PG Syllabus 2021", downloadUrl: "https://static.shubhampf.cloud/syllabus/mba/MBA-2021.pdf" },
             { id: 2, description: "PG Syllabus 2018", downloadUrl: "https://static.shubhampf.cloud/syllabus/mba/MBA-2018.pdf" },
@@ -13,6 +13,13 @@ const resultsData = [
             { id: 4, description: "PG Syllabus 2009", downloadUrl: "https://static.shubhampf.cloud/syllabus/mba/MBA-2009.pdf" },
             { id: 5, description: "PG Syllabus 2006", downloadUrl: "https://static.shubhampf.cloud/syllabus/mba/MBA-2004.pdf" },
 
+        ]
+    },
+    {
+        title: "Post Graduation",
+        courseName: "Master of Commerce",
+        results: [
+            { id: 1, description: "PG Syllabus 2018", downloadUrl: "https://static.shubhampf.cloud/syllabus/mcom/MCom%202018.pdf" },
         ]
     },
 

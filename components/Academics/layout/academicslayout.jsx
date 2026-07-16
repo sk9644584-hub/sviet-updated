@@ -77,15 +77,37 @@ function Academicslayout({
                                         Department Profile
                                     </h2>
                                     <div className="space-y-3 text-gray-700 text-sm">
-                                        {/* <h3 className="font-semibold text-gray-900">
-                                            Strengths of the Department
-                                        </h3> */}
-                                        <div className="space-y-2 ">
-                                            {departmentProfile.length > 0 && departmentProfile.map((profile, index) => (
-                                                <p key={index} className="text-justify">
-                                                    {profile}
-                                                </p>
-                                            ))}
+                                        <div className="space-y-2">
+                                            {departmentProfile.length > 0 && departmentProfile.map((profile, index) => {
+                                                // OLD FORMAT: plain string -> paragraph (unchanged behavior)
+                                                if (typeof profile === "string") {
+                                                    return (
+                                                        <p key={index} className="text-justify">
+                                                            {profile}
+                                                        </p>
+                                                    );
+                                                }
+
+                                                // NEW FORMAT: { heading, points: [] } -> heading + bullet list
+                                                if (profile && typeof profile === "object" && Array.isArray(profile.points)) {
+                                                    return (
+                                                        <div key={index} className="space-y-1">
+                                                            {profile.heading && (
+                                                                <p className="text-justify">{profile.heading}</p>
+                                                            )}
+                                                            <ul className="list-disc pl-6 space-y-1">
+                                                                {profile.points.map((point, pIndex) => (
+                                                                    <li key={pIndex} className="text-justify">
+                                                                        {point}
+                                                                    </li>
+                                                                ))}
+                                                            </ul>
+                                                        </div>
+                                                    );
+                                                }
+
+                                                return null;
+                                            })}
                                         </div>
                                     </div>
                                 </div>

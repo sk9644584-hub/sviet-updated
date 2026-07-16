@@ -29,7 +29,6 @@ const resultsData = [
         courseName: "Master of Hotel Management & Catering Technology",
         results: [
             { id: 1, description: "PG Syllabus 2018", downloadUrl: "https://static.shubhampf.cloud/syllabus/Hotel-Mngmnt/Syllabus/MHMCT%20Batch%202018.pdf" },
-            { id: 2, description: "PG Syllabus 2013", downloadUrl: "https://static.shubhampf.cloud/syllabus/Hotel-Mngmnt/Syllabus/MHMCT%20Batch%202013.pdf" },
         ]
     },
 

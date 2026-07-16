@@ -3,9 +3,10 @@ import React from 'react'
 const resultsData = [
 
 
+    
     {
         title: "Post Graduation",
-        courseName: "",
+        courseName: "Master of Computer Application",
         results: [
             { id: 1, description: "PG Syllabus 2021", downloadUrl: "https://static.shubhampf.cloud/syllabus/mca/MCA-2021.pdf" },
             { id: 2, description: "PG Syllabus 2020", downloadUrl: "https://static.shubhampf.cloud/syllabus/mca/MCA-2020.pdf" },
@@ -16,7 +17,13 @@ const resultsData = [
 
         ]
     },
-
+    {
+        title: "Post Graduation Diploma",
+        courseName: "Post Graduate Diploma in Computer Application",
+        results: [
+            { id: 1, description: "PGD Syllabus 2019", downloadUrl: "https://static.shubhampf.cloud/syllabus/ca/PGDCA-Syllabus-2019.pdf" },
+        ]
+    },
 
 
 ]

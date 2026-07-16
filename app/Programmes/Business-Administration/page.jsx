@@ -32,6 +32,36 @@ const programmes = [
         ]
 
     },
+    {
+        title: "Post Graduation",
+        data: {
+            courseName: "Master of Commerce",
+            level: "PG (Intake: 30)",
+            "Year of Approval": "2014",
+
+        },
+        pos: [
+            "<strong>PO1:</strong> Advanced Commerce Knowledge: Demonstrate advanced knowledge and understanding of commerce, accounting, finance, taxation, banking, marketing, economics, and business management to analyze and solve complex business problems.",
+            "<strong>PO2:</strong> Critical Thinking and Problem Solving: Apply analytical, quantitative, and critical thinking skills to evaluate business situations, interpret financial and economic data, and develop effective solutions for organizational and societal challenges.",
+            "<strong>PO3:</strong> Research and Innovation: Design and conduct research using appropriate methodologies, statistical tools, and digital technologies to generate meaningful insights and contribute to knowledge in commerce and business.",
+            "<strong>PO4:</strong> Professional Ethics and Social Responsibility: Demonstrate ethical values, professional integrity, environmental consciousness, and social responsibility while making business and managerial decisions in diverse organizational contexts.",
+            "<strong>PO5:</strong> Digital Competency and Lifelong Learning: Utilize modern information and communication technologies, accounting software, financial analytics tools, and digital business platforms while engaging in continuous learning to adapt to changing business environments.",
+            "<strong>PO6:</strong> Leadership, Communication, and Entrepreneurship: Exhibit effective communication, leadership, teamwork, entrepreneurial mindset, and managerial competencies to lead organizations, manage resources, and create sustainable business opportunities."
+        ],
+        peos: [
+            "<strong>PEO1:</strong> Professional Competence: Graduates will establish successful careers in commerce, accounting, finance, taxation, banking, insurance, marketing and related sectors by applying advanced knowledge and professional skills.",
+            "<strong>PEO2:</strong> Higher Education and Research: Graduates will pursue higher studies, professional qualifications, research, and lifelong learning to enhance their academic and professional growth.",
+            "<strong>PEO3:</strong> Leadership and Entrepreneurship: Graduates will demonstrate leadership, managerial, and entrepreneurial abilities to effectively manage organizations, create innovative business ventures, and contribute to economic development.",
+            "<strong>PEO4:</strong> Ethical and Social Responsibility: Graduates will uphold ethical values, professional integrity, corporate governance, and social responsibility while addressing business, economic, and societal challenges.",
+            "<strong>PEO5:</strong> Digital and Analytical Excellence: Graduates will effectively utilize modern digital technologies, analytical tools, and research methodologies to make informed business decisions in a dynamic global environment.",
+            "<strong>PEO6:</strong> Global Perspective and Sustainable Development: Graduates will contribute to sustainable organizational and societal development by integrating global business perspectives, environmental consciousness, and inclusive economic practices into professional decision-making."
+        ],
+        psos: [
+            "<strong>PSO1:</strong> Advanced Commerce and Financial Competency: Apply advanced concepts, principles, and practices of accounting, finance, taxation, auditing, banking, insurance, economics, and business management to analyze, interpret, and solve complex business and financial problems in diverse organizational settings.",
+            "<strong>PSO2:</strong> Research, Digital Applications, and Strategic Decision-Making: Demonstrate proficiency in research methodology, statistical analysis, business analytics, and digital financial tools to conduct independent research, formulate evidence-based business strategies, and support sustainable organizational growth and entrepreneurial development."
+        ]
+
+    },
 ]
 const page = () => {
     return (

@@ -33,6 +33,7 @@ export const navItems = [
                     { name: "COMPUTER APPLICATIONS", href: "/academics/Computer-Applications" },
                     { name: "BUSINESS ADMINISTRATION", href: "/academics/Business-Administration" },
                     { name: "HOTEL MANAGEMENT", href: "/academics/Hotel-Management" },
+                    { name: "APPLIED SCIENCES", href: "/academics/Applied-Sciences" },
                 ]
             },
         ]
