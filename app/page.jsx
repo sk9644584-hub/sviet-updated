@@ -46,7 +46,7 @@ const keyHighlights = [
     imageQuery: "https://static.shubhampf.cloud/Collegeoverview/sports.jpg"
   },
 ]
-export const testimonials = [
+const testimonials = [
   {
     id: 1,
     name: "Gaurav Sharma",
