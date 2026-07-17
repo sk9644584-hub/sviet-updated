@@ -51,7 +51,7 @@ export function SyllabusLayout({ showFaculty, departmentNameForNav, routeName, r
                                                                             className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 text-xs"
                                                                             asChild
                                                                         >
-                                                                            <Link href={result.downloadUrl}>
+                                                                            <Link target="_blank" href={result.downloadUrl}>
                                                                                 <Download className="h-3 w-3 mr-1" />
                                                                                 Download
                                                                             </Link>
