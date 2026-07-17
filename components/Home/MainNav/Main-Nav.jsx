@@ -44,7 +44,7 @@ export function MainNav() {
                                     <DropdownMenuTrigger asChild>
                                         <span
                                             className={`cursor-pointer xl:px-2 lg:px-1.5 md:px-1 py-4 whitespace-nowrap block transition-colors duration-200 uppercase
-                        ${activeDropdown === item.name
+                        ${activeDropdown === item.name.toUpperCase()
                                                     ? "bg-white text-[#007bff]"
                                                     : "hover:bg-white hover:text-[#007bff]"
                                                 }
@@ -52,7 +52,7 @@ export function MainNav() {
                                             // Prevent navigation on click for dropdown triggers
                                             onClick={e => e.preventDefault()}
                                         >
-                                            {item.name}
+                                            {item.name.toUpperCase()}
                                         </span>
                                     </DropdownMenuTrigger>
                                     <DropdownMenuContent
@@ -67,7 +67,7 @@ export function MainNav() {
                                                 <div key={colIndex}>
                                                     {col.title && (
                                                         <h5 className="mb-2 font-medium text-gray-900">
-                                                            {col.title}
+                                                            {col.title.toUpperCase()}
                                                         </h5>
                                                     )}
                                                     <ul className="space-y-1">
@@ -77,7 +77,7 @@ export function MainNav() {
                                                                     <Accordion type="single" collapsible className="w-full">
                                                                         <AccordionItem value={link.name} className="border-b-0 space-y-0 pb-0">
                                                                             <AccordionTrigger className="py-1 text-sm text-left text-gray-700 hover:text-[#007bff] hover:no-underline flex justify-between w-full font-medium">
-                                                                                {link.name}
+                                                                                {link.name.toUpperCase()}
                                                                             </AccordionTrigger>
                                                                             <AccordionContent className="pb-1 pt-1 ml-3 border-l-2 border-gray-100 pl-3">
                                                                                 <ul className="space-y-2">
@@ -87,7 +87,7 @@ export function MainNav() {
                                                                                                 href={sub.href}
                                                                                                 className="text-gray-500 text-[0.80rem] hover:text-[#007bff] block transition-colors"
                                                                                             >
-                                                                                                {sub.name}
+                                                                                                {sub.name.toUpperCase()}
                                                                                             </Link>
                                                                                         </li>
                                                                                     ))}
@@ -100,7 +100,7 @@ export function MainNav() {
                                                                         href={link.href}
                                                                         className="text-gray-700 text-sm hover:text-[#007bff] font-medium block py-1"
                                                                     >
-                                                                        {link.name}
+                                                                        {link.name.toUpperCase()}
                                                                     </Link>
                                                                 )}
                                                             </li>
@@ -116,7 +116,7 @@ export function MainNav() {
                                     href={item.href}
                                     className={`whitespace-nowrap xl:px-2 lg:px-1.5 md:px-1 py-4 block transition-colors duration-200 hover:bg-white uppercase hover:text-[#007bff]`}
                                 >
-                                    {item.name}
+                                    {item.name.toUpperCase()}
                                 </Link>
                             )}
                         </li>

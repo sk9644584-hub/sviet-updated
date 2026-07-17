@@ -34,6 +34,7 @@ export const navItems = [
                     { name: "BUSINESS ADMINISTRATION", href: "/academics/Business-Administration" },
                     { name: "HOTEL MANAGEMENT", href: "/academics/Hotel-Management" },
                     { name: "APPLIED SCIENCES", href: "/academics/Applied-Sciences" },
+                    { name: "Allied and Healthcare Sciences", href: "/academics/Allied-Healthcare-Sciences" },
                 ]
             },
         ]

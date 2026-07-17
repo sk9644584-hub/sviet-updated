@@ -43,7 +43,7 @@ const page = () => {
                 showFaculty={false}
                 teacherPic='https://static.shubhampf.cloud/teachers/as.jpeg'
                 teacherName='Prof. (Dr.) Manoj Bali'
-                Designation='Head'
+                Designation='Dean'
                 Department='Department of Applied Sciences'
                 aboutDepartment={about}
                 departmentProfile={profile}
