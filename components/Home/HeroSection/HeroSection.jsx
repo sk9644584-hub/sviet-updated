@@ -46,26 +46,55 @@ export function HeroSection({ images }) {
                     }}
                 >
                     <CarouselContent>
-                        {images.map((_, index) => (
-                            <CarouselItem key={index}>
-                                <div className="flex items-center justify-center w-full h-full">
-                                    <div className="relative flex items-center justify-center w-full h-[320px] md:h-[410px] lg:h-[490px] bg-blue-400">
-                                        <Image
-                                            src={images[index].imageUrl}
-                                            alt={`College Banner ${index + 1}`}
-                                            fill
-                                            style={{ objectFit: 'cover' }}
-                                            className="z-0"
-                                            priority={true}
-                                        />
+                        {images.map((img, index) => {
+                            const hasHeading = img.heading != null && typeof img.heading === 'string' && img.heading.trim() !== '';
+                            return (
+                                <CarouselItem key={index}>
+                                    <div className="flex items-center justify-center w-full h-full">
+                                        <div className="relative flex items-center justify-center w-full h-[320px] md:h-[410px] lg:h-[490px] bg-blue-400">
+                                            <Image
+                                                src={img.imageUrl}
+                                                alt={`College Banner ${index + 1}`}
+                                                fill
+                                                style={{ objectFit: 'cover' }}
+                                                className="z-0"
+                                                priority={true}
+                                            />
+                                            {hasHeading && (
+                                                <span
+                                                    className="hero-heading-overlay"
+                                                    style={{
+                                                        position: 'absolute',
+                                                        bottom: 'clamp(6px, 2%, 16px)',
+                                                        right: 'clamp(6px, 2%, 16px)',
+                                                        zIndex: 10,
+                                                        background: 'rgba(0, 0, 0, 0.7)',
+                                                        color: '#fff',
+                                                        fontWeight: 700,
+                                                        fontSize: 'clamp(0.65rem, 1.8vw, 1.35rem)',
+                                                        lineHeight: 1.2,
+                                                        padding: 'clamp(3px, 0.5vw, 10px) clamp(6px, 1vw, 18px)',
+                                                        borderRadius: '4px',
+                                                        maxWidth: '55%',
+                                                        wordBreak: 'break-word',
+                                                        textAlign: 'right',
+                                                        pointerEvents: 'none',
+                                                        boxSizing: 'border-box',
+                                                    }}
+                                                >
+                                                    {img.heading.trim()}
+                                                </span>
+                                            )}
+                                        </div>
                                     </div>
-                                </div>
-                            </CarouselItem>
-                        ))}
+                                </CarouselItem>
+                            );
+                        })}
+
                     </CarouselContent>
                 </Carousel>
                 {/* Pagination Dots */}
-                <div className="flex absolute bottom-3 left-1/2 transform -translate-x-1/2 justify-center gap-2 z-20">
+                {/*    <div className="flex absolute bottom-3 left-1/2 transform -translate-x-1/2 justify-center gap-2 z-20">
                     {Array.from({ length: images.length }).map((_, index) => (
                         <button
                             key={index}
@@ -75,7 +104,7 @@ export function HeroSection({ images }) {
                             aria-label={`Go to slide ${index + 1}`}
                         />
                     ))}
-                </div>
+                </div>*/}
 
                 {/* Left Button */}
                 <button
