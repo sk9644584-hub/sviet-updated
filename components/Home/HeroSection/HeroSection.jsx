@@ -51,12 +51,12 @@ export function HeroSection({ images }) {
                             return (
                                 <CarouselItem key={index}>
                                     <div className="flex items-center justify-center w-full h-full">
-                                        <div className="relative flex items-center justify-center w-full h-[320px] md:h-[410px] lg:h-[490px] bg-blue-400">
+                                        <div className="relative flex items-center justify-center w-full h-[330px] md:h-[420px] lg:h-[500px] bg-blue-400 ">
                                             <Image
                                                 src={img.imageUrl}
                                                 alt={`College Banner ${index + 1}`}
                                                 fill
-                                                style={{ objectFit: 'cover' }}
+                                                style={{ objectFit: 'cover', objectPosition: "center 35% " }}
                                                 className="z-0"
                                                 priority={true}
                                             />
