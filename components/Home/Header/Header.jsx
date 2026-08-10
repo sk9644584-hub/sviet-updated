@@ -1,4 +1,5 @@
 "use client"
+import { useState } from "react"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { MenuIcon } from "lucide-react"
@@ -14,6 +15,8 @@ import {
 
 import { navItems } from "../MainNav/NavItems"
 export function Header() {
+    const [open, setOpen] = useState(false)
+
     return (
         <header className="bg-white border-b py-4 shadow-sm">
             <div className="px-4 flex items-center justify-between w-full  md:px-6">
@@ -87,7 +90,7 @@ export function Header() {
                     </div>
                 </div>
 
-                <Sheet>
+                <Sheet open={open} onOpenChange={setOpen}>
                     <SheetTrigger asChild className="md:hidden">
                         <Button variant="ghost" size="icon" className="">
                             <MenuIcon className="h-6 w-6" />
@@ -124,6 +127,7 @@ export function Header() {
                                                                     <li key={linkIndex} className="space-y-2">
                                                                         <Link
                                                                             href={link.href}
+                                                                            onClick={() => setOpen(false)}
                                                                             className="hover:underline block font-medium"
                                                                         >
                                                                             {link.name}
@@ -132,7 +136,11 @@ export function Header() {
                                                                             <ul className="ml-4 space-y-2 border-l border-white/20 pl-3">
                                                                                 {link.subLinks.map((sub, subIdx) => (
                                                                                     <li key={subIdx}>
-                                                                                        <Link href={sub.href} className="hover:underline text-sm opacity-90 block">
+                                                                                        <Link
+                                                                                            href={sub.href}
+                                                                                            onClick={() => setOpen(false)}
+                                                                                            className="hover:underline text-sm opacity-90 block"
+                                                                                        >
                                                                                             {sub.name}
                                                                                         </Link>
                                                                                     </li>
@@ -151,6 +159,7 @@ export function Header() {
                                         <Link
                                             key={item.name}
                                             href={item.href}
+                                            onClick={() => setOpen(false)}
                                             className="block py-2 text-lg hover:underline border-b border-white/20"
                                         >
                                             {item.name.toUpperCase()}
