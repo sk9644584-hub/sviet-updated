@@ -228,12 +228,35 @@ export function ContactUsPage() {
     const handleSubmit = async (e) => {
         e.preventDefault()
         let newErrors = {}
-        if (!validateEmail(form.email)) {
+        
+        if (!form.name.trim()) {
+            newErrors.name = "Name is required."
+        }
+        
+        if (!form.email.trim()) {
+            newErrors.email = "Email is required."
+        } else if (!validateEmail(form.email)) {
             newErrors.email = "Please enter a valid email address."
         }
-        if (!validatePhone(form.phone)) {
+        
+        if (!form.phone.trim()) {
+            newErrors.phone = "Phone number is required."
+        } else if (!validatePhone(form.phone)) {
             newErrors.phone = "Please enter a valid phone number."
         }
+        
+        if (!form.city.trim()) {
+            newErrors.city = "City/address is required."
+        }
+        
+        if (!form.course) {
+            newErrors.course = "Please select a course."
+        }
+        
+        if (!form.program) {
+            newErrors.program = "Please select a program/branch."
+        }
+
         setErrors(newErrors)
         if (Object.keys(newErrors).length > 0) return
 
@@ -318,25 +341,30 @@ export function ContactUsPage() {
                                     </h2>
                                     <form className="space-y-4 space-x-4" onSubmit={handleSubmit} autoComplete="off">
                                         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-                                            <Input
-                                                name="name"
-                                                value={form.name}
-                                                onChange={handleChange}
-                                                placeholder="Enter Your Name"
-                                                className="border-gray-300"
-                                                autoComplete="off"
-                                            />
+                                            <div>
+                                                <Input
+                                                    name="name"
+                                                    value={form.name}
+                                                    onChange={handleChange}
+                                                    placeholder="Enter Your Name"
+                                                    className={`border-gray-300 ${errors.name ? 'border-red-500' : ''}`}
+                                                    autoComplete="off"
+                                                />
+                                                {errors.name && (
+                                                    <p className="text-red-500 text-xs mt-1">{errors.name}</p>
+                                                )}
+                                            </div>
                                             <div>
                                                 <Input
                                                     name="email"
                                                     value={form.email}
                                                     onChange={handleChange}
                                                     placeholder="Enter Your Email Address"
-                                                    className="border-gray-300"
+                                                    className={`border-gray-300 ${errors.email ? 'border-red-500' : ''}`}
                                                     autoComplete="off"
                                                 />
                                                 {errors.email && (
-                                                    <p className="text-red-500 text-xs">{errors.email}</p>
+                                                    <p className="text-red-500 text-xs mt-1">{errors.email}</p>
                                                 )}
                                             </div>
                                         </div>
@@ -348,56 +376,71 @@ export function ContactUsPage() {
                                                     onChange={handleChange}
                                                     placeholder="Enter Mobile Number (eg. 1234567890)"
                                                     type="text"
-                                                    className="border-gray-300"
+                                                    className={`border-gray-300 ${errors.phone ? 'border-red-500' : ''}`}
                                                     autoComplete="off"
                                                 />
                                                 {errors.phone && (
-                                                    <p className="text-red-500 text-xs">{errors.phone}</p>
+                                                    <p className="text-red-500 text-xs mt-1">{errors.phone}</p>
                                                 )}
                                             </div>
-                                            <Input
-                                                name="city"
-                                                value={form.city}
-                                                onChange={handleChange}
-                                                placeholder="Enter Your district/state/address"
-                                                className="border-gray-300"
-                                                autoComplete="off"
-                                            />
+                                            <div>
+                                                <Input
+                                                    name="city"
+                                                    value={form.city}
+                                                    onChange={handleChange}
+                                                    placeholder="Enter Your district/state/address"
+                                                    className={`border-gray-300 ${errors.city ? 'border-red-500' : ''}`}
+                                                    autoComplete="off"
+                                                />
+                                                {errors.city && (
+                                                    <p className="text-red-500 text-xs mt-1">{errors.city}</p>
+                                                )}
+                                            </div>
                                         </div>
                                         <div>
                                             <label className="mb-2 block text-sm font-medium text-gray-700">
                                                 Enter Your Interested Program
                                             </label>
                                             <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-                                                <Select value={form.course} onValueChange={handleCourseChange}>
-                                                    <SelectTrigger>
-                                                        <SelectValue placeholder="Select Your Course" />
-                                                    </SelectTrigger>
-                                                    <SelectContent>
-                                                        {courseOptions.map((course) => (
-                                                            <SelectItem key={course.value} value={course.value}>
-                                                                {course.label}
-                                                            </SelectItem>
-                                                        ))}
-                                                    </SelectContent>
-                                                </Select>
-                                                <Select
-                                                    value={form.program}
-                                                    onValueChange={handleProgramChange}
-                                                    disabled={!form.course}
-                                                >
-                                                    <SelectTrigger>
-                                                        <SelectValue placeholder="Select Your Program" />
-                                                    </SelectTrigger>
-                                                    <SelectContent>
-                                                        {form.course &&
-                                                            programOptions[form.course]?.map((prog) => (
-                                                                <SelectItem key={prog.value} value={prog.value}>
-                                                                    {prog.label}
+                                                <div>
+                                                    <Select value={form.course} onValueChange={handleCourseChange}>
+                                                        <SelectTrigger className={errors.course ? "border-red-500" : ""}>
+                                                            <SelectValue placeholder="Select Your Course" />
+                                                        </SelectTrigger>
+                                                        <SelectContent>
+                                                            {courseOptions.map((course) => (
+                                                                <SelectItem key={course.value} value={course.value}>
+                                                                    {course.label}
                                                                 </SelectItem>
                                                             ))}
-                                                    </SelectContent>
-                                                </Select>
+                                                        </SelectContent>
+                                                    </Select>
+                                                    {errors.course && (
+                                                        <p className="text-red-500 text-xs mt-1">{errors.course}</p>
+                                                    )}
+                                                </div>
+                                                <div>
+                                                    <Select
+                                                        value={form.program}
+                                                        onValueChange={handleProgramChange}
+                                                        disabled={!form.course}
+                                                    >
+                                                        <SelectTrigger className={errors.program ? "border-red-500" : ""}>
+                                                            <SelectValue placeholder="Select Your Program" />
+                                                        </SelectTrigger>
+                                                        <SelectContent>
+                                                            {form.course &&
+                                                                programOptions[form.course]?.map((prog) => (
+                                                                    <SelectItem key={prog.value} value={prog.value}>
+                                                                        {prog.label}
+                                                                    </SelectItem>
+                                                                ))}
+                                                        </SelectContent>
+                                                    </Select>
+                                                    {errors.program && (
+                                                        <p className="text-red-500 text-xs mt-1">{errors.program}</p>
+                                                    )}
+                                                </div>
                                             </div>
                                         </div>
                                         <Button
