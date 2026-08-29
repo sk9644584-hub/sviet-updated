@@ -139,7 +139,13 @@ export function ContactUsPage() {
         { value: "mtech", label: "M.Tech" },
         { value: "mba", label: "MBA" },
         { value: "mca", label: "MCA" },
-        { value: "bca", label: "BCA" }
+        { value: "bca", label: "BCA" },
+        { value: "mcom", label: "M.Com" },
+        { value: "bhmct", label: "BHMCT" },
+        { value: "mhmct", label: "MHMCT" },
+        { value: "bvoc", label: "B.Voc" },
+        { value: "bsc", label: "B.Sc." },
+        { value: "msc", label: "M.Sc." },
     ]
 
     const programOptions = {
@@ -166,6 +172,31 @@ export function ContactUsPage() {
         ],
         bca: [
             { value: "bca", label: "Bachelor of Computer Application (BCA)" }
+        ],
+        mcom: [
+            { value: "mcom", label: "Master of Commerce (M.Com)" }
+        ],
+        bhmct: [
+            { value: "bhmct", label: "Bachelor of Hotel Management & Catering Technology" }
+        ],
+        mhmct: [
+            { value: "mhmct", label: "Master of Hotel Management & Catering Technology" }
+        ],
+        bvoc: [
+            { value: "bvoc-hcm", label: "Bachelor of Vocation (Hospitality & Catering Management)" }
+        ],
+        bsc: [
+            { value: "bsc-nd", label: "B.Sc. Nutrition & Dietetics" },
+            { value: "bsc-mls", label: "B.Sc. Medical Lab Sciences" },
+            { value: "bsc-rit", label: "B.Sc. Radiology & Imaging Technology" },
+            { value: "bsc-ott", label: "B.Sc. Operation Theatre Technology" },
+            { value: "bsc-cct", label: "B.Sc. Cardiac Care Technology" }
+        ],
+        msc: [
+            { value: "msc-math", label: "M.Sc. Mathematics" },
+            { value: "msc-physics", label: "M.Sc. Physics" },
+            { value: "msc-mm", label: "M.Sc. Medical Microbiology" },
+            { value: "msc-rit", label: "M.Sc. Radiology and Imaging Technology" }
         ]
     }
 
@@ -228,38 +259,55 @@ export function ContactUsPage() {
     const handleSubmit = async (e) => {
         e.preventDefault()
         let newErrors = {}
-        
+
         if (!form.name.trim()) {
             newErrors.name = "Name is required."
         }
-        
+
         if (!form.email.trim()) {
             newErrors.email = "Email is required."
         } else if (!validateEmail(form.email)) {
             newErrors.email = "Please enter a valid email address."
         }
-        
+
         if (!form.phone.trim()) {
             newErrors.phone = "Phone number is required."
         } else if (!validatePhone(form.phone)) {
             newErrors.phone = "Please enter a valid phone number."
         }
-        
+
         if (!form.city.trim()) {
             newErrors.city = "City/address is required."
         }
-        
+
         if (!form.course) {
             newErrors.course = "Please select a course."
         }
-        
+
         if (!form.program) {
             newErrors.program = "Please select a program/branch."
         }
 
         setErrors(newErrors)
         if (Object.keys(newErrors).length > 0) return
+        let tried = Number(localStorage.getItem("triedCount")) || 0;
+        let lastTryTime = Number(localStorage.getItem("lastTryTime")) || 0;
+        const now = Date.now();
 
+        if (tried >= 2) {
+            const timePassed = now - lastTryTime;
+            const twentyFourHours = 24 * 60 * 60 * 1000;
+            if (timePassed < twentyFourHours) {
+                const remainingTime = twentyFourHours - timePassed;
+                const hours = Math.floor(remainingTime / (1000 * 60 * 60));
+                const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+                alert(`You have already submitted twice. Please wait for ${hours} hours and ${minutes} minutes before trying again.`);
+                return;
+            } else {
+                tried = 0;
+                localStorage.setItem("triedCount", 0);
+            }
+        }
         setLoading(true) // <-- set loading true
         // try catch block
 
@@ -274,6 +322,9 @@ export function ContactUsPage() {
             alert("Enquiry submitted successfully!")
 
             setForm({ name: "", email: "", phone: "", city: "", course: "", program: "" })
+            localStorage.setItem("triedCount", tried + 1);
+            localStorage.setItem("lastTryTime", Date.now());
+
         } catch (error) {
             console.error("Submission error:", error)
             let err = error.response.data.message || "Something went wrong. Please try again."
